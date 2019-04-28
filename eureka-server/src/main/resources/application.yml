@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    preferIpAddress: true
+    #metadataMap:
+    # user:
+    #  name: "root"        #These two are needed so that the server
+    #  password: "root"    #can access the protected client endpoints
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    healthcheck:
+      enabled: true

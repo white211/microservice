@@ -1,0 +1,34 @@
+
+server:
+  port: 8082
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: config-server
+
+# hystrix超时，5秒
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+#### 系统建康状态 #####
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    servlet:
+      contextPath: /
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      showDetails: always
+

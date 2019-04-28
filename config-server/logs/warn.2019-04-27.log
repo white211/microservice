@@ -1,0 +1,4 @@
+[cms] 23:34:34.857 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 23:34:37.760 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:34:46.354 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:34:56.932 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter

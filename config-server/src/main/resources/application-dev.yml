@@ -1,0 +1,59 @@
+
+spring:
+  profiles:
+    active: dev
+  # security:
+  #  user:
+  #    name: config
+  #    password: configPassword
+  cloud:
+    config:
+      server:
+        label: master
+        git:
+          uri:  https://github.com/white211/SpringcloudConfig/
+          forcePull: false
+          searchPaths: '{application}'
+          # ssh 方式必需设置
+#          ignoreLocalSshSettings: true
+          # ssh-rsa 无密钥时无需这两项
+          #hostKey: someHostKey
+          #hostKeyAlgorithm: ssh-rsa
+#          privateKey: |
+#            -----BEGIN RSA PRIVATE KEY-----
+#            MIIEowIBAAKCAQEAorzSUg1ALkzusZ7Wusz0rb4iAPEjA3WNb3Tj7NT5YkpdMZtF
+#            CpHGlqDU6JaVjtcvQnGYNr6pT5LMgAeD3XU9dmNjHEwH4d2cyDWn0twoO5xzvWCp
+#            CMyY6Pm2R6vqZH86NMMlWDTg2+8lq368wwCPPfbuKgFdHzif+R4Lns6vObU9H5zP
+#            k0BVQaJhsxflBWLjJjnK3m8g+yBmNSozPmVDlVFP0Pfq+SkYBbvY/tV9ivnqvEx5
+#            q6Fcz9/JdY5SdnWMEzS/AhiOZ2T3qQmilDmbecDIsSEUOjgMvj+ROlFdR/zdWdkR
+#            SuFd4WwNpJpRhitH/1vN20oasvWaorxG04R0kwIDAQABAoIBAFEjnCnU+X8cVJay
+#            /5U7w3MtLX8Su8Zpwg8kVNAsj/r14Olu5UmTzVQk9ILTMdZ6a9HRGXeSMJDAPL5J
+#            APJWFkME4tGlBvkSqa0ZM4fqxRSTuRFfNGhyunrOppetm7xnwvmzotcL5mFCJ6IO
+#            GsePa9wVVkITU/7RGNH4rQqNOsimTPXWdqxXk8Eumz5tpxj6aHSCQ4v8vbaywZU7
+#            uXZ+nX6zD4jaIeuqY5HSi35S6i25ZqPBhDIWtRHjMxOp5s1Jb2v01bSUDJE7Hlt3
+#            J4MME2nnEghLVGMvuHZLWXszWv2RGGOO2Y1lUCE2ix/mbua7DPPMnq33jmLtB0om
+#            3SiSgiECgYEA1yX98J/T3/1XGfDy5DPdK0/MZ20l6/1hkuIOs6kcTLtpOtf3QpFi
+#            VzkDvU+NXgh1srjnHnMNTfNXSd7ikOvRXpoxETS3EXNbxDUwZZJbvF1h2BPce3lg
+#            E+HfnRUcytYIziIg1+uJyhpv7xnMQiUPJWwaN9Yhk2v6gCxjqLcuVQ8CgYEAwaM5
+#            7WAuIEWvjvtERDy3wO8htO9bPo29Ybl6dnJHpe0cxmCv2MbyiczD6YmAJsZ15P1o
+#            vcAvuG0388Rys5o+60am99fFcoH318zOJxW09Mf9UpTz5WLkOl9uhxG04kl+zwhH
+#            pj0ZO+rIgMSEbNn3GJZgr2o8tRLu3Tv6W73C0D0CgYEAlZ22/Ym4JtEfrEuSLb4f
+#            dQo2REp0D6uSGjoYLTpSEs5VfHVJXsKJl8xvXEwhLB5H8zSAjP1HaEjsD9PuzQcg
+#            /1/M9YEqOfl1/HlcoZXpM5HhBAmzzy318X2nKq7O6gNz9h1np6AFn0VJSAYxtGHf
+#            KZAGn4PKr6Fsf4ve9ioFD2MCgYB4BF9nDXIJdqe1i29oi+mon47YwnJfdyKma3vH
+#            5lUaNrjbDBpx1f2GA3B6U0smvWNdJuPAmFn7iVZgtKYTQ8szsHrUqtwqePvQuZQd
+#            DYs3HK2afdAdoQmsVHIBLaxbhQof8BXYp434YTEc/rDFduN8TdhnYQV3heCfJwmp
+#            yxfwUQKBgBBn0IyQwIf1s4cI4IEUporX3me9VEX/jWC1iocyHojzpheHcB7FAT+u
+#            9jh/n3Sl5xXPLTVx/i4tUt22kqkHBEih5TtwJmaztu/YZuQjJaA4ibQyxD+wM2Vc
+#            EOWJwTxenPD5/rGBdk2P17c73FnyVgRM6wbg+qCp/tkHUkxWK0sN
+#            -----END RSA PRIVATE KEY-----
+      #username: config
+      #password: configPassword
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8081/eureka
+    healthcheck:
+      enabled: true

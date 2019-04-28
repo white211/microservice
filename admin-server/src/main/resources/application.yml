@@ -1,0 +1,58 @@
+
+server:
+  port: 8083
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: admin-server
+  #security:
+  #  user:
+  #    name: root
+  #    password: root
+  #boot:
+  #  admin:
+  #    client:
+  #      username: root
+  #      password: root
+  #      instance:
+  #        metadata:
+  #          user.name: root
+  #          user.password: root
+
+# https://blog.csdn.net/liupeifeng3514/article/details/80558841
+# 登陆所需的账号密码
+#spring.security.user.name=root
+#spring.security.user.password=root
+# 便于客户端可以在受保护的服务器上注册api
+#spring.boot.admin.client.username=root
+#spring.boot.admin.client.password=root
+# 便服务器可以访问受保护的客户端端点
+#spring.boot.admin.client.instance.metadata.user.name=root
+#spring.boot.admin.client.instance.metadata.user.password=root
+
+# hystrix超时，5秒
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+#### 系统建康状态 #####
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    servlet:
+      contextPath: /
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      showDetails: always
+
