@@ -1,0 +1,607 @@
+[cms] 00:14:43.547 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 00:14:46.135 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:14:50.720 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:14:55.975 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 00:14:57.436 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:14:57.678 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 31 common frames omitted
+[cms] 00:14:57.776 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1556468097776, current=DOWN, previous=UP]
+[cms] 00:14:57.781 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 00:14:58.120 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:14:58.144 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 31 common frames omitted
+[cms] 00:15:29.414 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:15:29.594 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 30 common frames omitted
+[cms] 00:22:09.184 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 00:22:18.342 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:22:29.567 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:22:42.472 [main] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[cms] 00:22:42.488 [main] WARN  com.netflix.discovery.DiscoveryClient[290] - Using default backup registry implementation which does not do anything.
+[cms] 00:22:42.553 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 00:22:44.709 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:22:45.412 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 31 common frames omitted
+[cms] 00:22:45.475 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1556468565475, current=DOWN, previous=UP]
+[cms] 00:22:45.475 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 00:22:46.682 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[cms] 00:22:46.698 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[831] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[cms] 00:22:46.698 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator[125] - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[cms] 00:22:47.070 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:22:47.248 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 26 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 31 common frames omitted
+[cms] 00:23:20.182 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:23:20.208 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository[577] - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:306)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:574)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.copyRepository(JGitEnvironmentRepository.java:549)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.createGitClient(JGitEnvironmentRepository.java:532)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:261)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:240)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:149)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:47)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:189)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:46)
+	at org.springframework.cloud.config.server.config.ConfigServerHealthIndicator.doHealthCheck(ConfigServerHealthIndicator.java:55)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:103)
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:99)
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1388)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/white211/SpringcloudConfig/: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:137)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:123)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 25 common frames omitted
+Caused by: java.net.UnknownHostException: github.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:254)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:231)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 30 common frames omitted
+[cms] 00:27:58.303 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 00:28:12.724 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:28:28.490 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 00:28:50.427 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 00:28:52.425 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:28:55.027 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/git-upload-pack
+[cms] 00:28:58.644 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:29:02.440 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:29:36.419 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:29:56.017 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:30:10.223 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:30:16.072 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:30:32.415 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:30:46.020 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:30:58.277 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:03.156 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:22.474 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:29.110 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:42.413 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:50.049 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:31:55.657 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:32:04.825 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:32:14.442 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:32:23.484 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:32:42.420 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:32:47.746 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:33:02.425 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:33:22.403 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:33:25.689 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:33:30.177 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:33:42.469 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:34:00.215 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:34:04.067 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:34:22.432 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:34:34.080 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:34:42.412 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:35:02.408 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:35:08.236 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:35:22.416 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:35:42.469 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:35:46.344 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:36:02.415 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:36:19.758 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:36:23.359 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:36:42.397 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:36:53.357 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:37:02.401 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:37:22.397 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:37:27.251 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:37:40.963 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:37:44.608 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:38:01.098 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:38:04.868 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:38:22.397 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:38:34.870 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:38:42.400 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:39:02.416 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:39:09.543 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:39:22.397 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:39:42.397 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:39:45.828 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:40:02.393 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:40:19.219 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:40:23.940 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:40:42.399 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:40:53.942 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:41:02.441 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:41:22.410 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:41:28.030 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:41:42.436 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:42:01.660 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:42:05.559 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:42:22.423 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:42:35.563 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:42:42.399 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:43:02.447 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:43:08.978 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:43:22.405 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:43:42.436 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:43:51.834 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:44:02.416 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:44:22.432 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:44:25.859 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:44:42.398 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:44:58.970 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:45:02.442 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:45:22.409 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:45:32.491 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:45:42.419 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:02.413 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:06.275 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:22.441 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:40.480 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:47.283 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:50.671 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:46:55.862 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:12.414 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:17.276 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:32.408 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:51.102 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:54.659 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:47:58.559 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:48:12.418 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:48:24.665 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:48:32.426 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:48:52.413 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:48:59.605 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:49:12.405 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:49:32.400 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:49:35.659 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:49:52.417 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:50:09.115 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:50:13.763 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:50:32.437 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:50:43.770 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:50:52.401 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:51:12.399 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:51:17.540 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:51:32.402 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:51:51.839 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:51:56.031 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:52:12.403 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:52:26.029 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:52:32.403 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:52:42.577 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:52:59.348 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:53:03.494 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:53:22.424 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:53:33.498 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:53:42.715 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:54:02.475 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:54:12.283 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:54:22.625 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:54:42.425 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:54:47.820 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:55:02.407 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:55:22.418 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:55:27.369 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:55:42.511 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:56:02.536 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:56:09.178 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:56:22.728 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:56:42.406 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:56:46.823 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:57:02.749 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:57:22.405 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:57:28.471 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:57:42.562 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:02.407 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:06.452 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:22.460 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:32.364 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:40.490 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:58:44.740 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:59:02.409 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:59:14.730 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:59:22.419 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:59:42.391 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 00:59:48.834 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:00:02.407 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:00:22.412 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:00:25.930 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:00:42.402 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:00:59.581 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:01:02.994 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:01:22.397 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:01:32.989 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:01:42.396 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:02:02.407 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:02:06.666 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:02:22.476 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:02:39.972 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:02:43.177 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:03:02.423 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:03:13.191 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:03:22.411 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:03:42.408 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:03:46.527 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:04:02.415 [http-nio-8082-exec-1] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:04:20.313 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:04:23.588 [http-nio-8082-exec-2] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:04:42.405 [http-nio-8082-exec-8] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:04:53.586 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:05:02.412 [http-nio-8082-exec-10] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:05:22.399 [http-nio-8082-exec-9] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:05:26.910 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:05:42.425 [http-nio-8082-exec-7] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:06:00.135 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:06:03.891 [http-nio-8082-exec-6] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:06:22.418 [http-nio-8082-exec-5] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:06:33.895 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:06:42.412 [http-nio-8082-exec-4] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:07:02.416 [http-nio-8082-exec-3] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack
+[cms] 01:07:07.663 [DiscoveryClient-InstanceInfoReplicator-0] WARN  org.springframework.cloud.config.server.environment.HttpClientConfigurableHttpConnectionFactory[98] - No custom http config found for URL: https://github.com/white211/SpringcloudConfig/info/refs?service=git-upload-pack

@@ -73,6 +73,7 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
             try {
                 executeLogin(request, response);
             } catch (Exception e) {
+                e.printStackTrace();
                 redirectPath(request, response,"/500");
             }
         }

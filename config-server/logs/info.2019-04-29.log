@@ -1,0 +1,358 @@
+[cms] 00:14:40.010 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe1d281a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:14:41.798 [main] INFO  com.white.configserver.ConfigServerApplication[679] - The following profiles are active: dev
+[cms] 00:14:44.118 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=3b71385d-5168-3e50-8d93-c328bbb49805
+[cms] 00:14:44.354 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fe1d281a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:14:45.586 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8082 (http)
+[cms] 00:14:45.640 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 00:14:45.644 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 00:14:45.906 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 00:14:45.910 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 4090 ms
+[cms] 00:14:46.138 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:14:46.175 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@730fbe76
+[cms] 00:14:50.639 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 00:14:50.723 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:14:51.046 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 00:14:53.214 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 20 endpoint(s) beneath base path '/actuator'
+[cms] 00:14:53.427 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 00:14:53.516 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 00:14:53.682 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 00:14:53.685 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 00:14:53.993 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 00:14:53.995 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 00:14:54.429 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:14:55.253 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:14:55.255 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:14:55.257 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:14:55.258 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:14:55.259 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:14:55.260 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 00:14:55.262 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:14:55.850 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 00:14:55.856 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 00:14:55.866 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 00:14:55.878 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1556468095875 with initial instances count: 0
+[cms] 00:14:55.896 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application CONFIG-SERVER with eureka with status UP
+[cms] 00:14:55.955 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1556468095955, current=UP, previous=STARTING]
+[cms] 00:14:56.280 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8082 (http) with context path ''
+[cms] 00:14:56.310 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8082
+[cms] 00:14:56.448 [main] INFO  com.white.configserver.ConfigServerApplication[59] - Started ConfigServerApplication in 25.21 seconds (JVM running for 55.703)
+[cms] 00:14:57.783 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_CONFIG-SERVER/DESKTOP-DIC4SEB.mshome.net:config-server:8082: registering service...
+[cms] 00:14:58.077 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_CONFIG-SERVER/DESKTOP-DIC4SEB.mshome.net:config-server:8082 - registration status: 204
+[cms] 00:15:25.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:15:26.063 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:15:26.194 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:15:26.447 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:15:26.659 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:15:26.897 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: false
+[cms] 00:15:26.945 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:15:27.116 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 00:21:56.988 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$421a1853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:22:02.809 [main] INFO  com.white.configserver.ConfigServerApplication[679] - The following profiles are active: dev
+[cms] 00:22:11.341 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=3b71385d-5168-3e50-8d93-c328bbb49805
+[cms] 00:22:12.137 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$421a1853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:22:16.686 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8082 (http)
+[cms] 00:22:16.873 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 00:22:16.936 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 00:22:17.561 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 00:22:17.561 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 14674 ms
+[cms] 00:22:18.342 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:22:18.436 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@757d5218
+[cms] 00:22:22.524 [main] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:22:29.347 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 00:22:29.647 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:22:31.262 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 00:22:34.818 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 20 endpoint(s) beneath base path '/actuator'
+[cms] 00:22:35.198 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 00:22:35.526 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 00:22:36.479 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 00:22:36.885 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 00:22:37.624 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 00:22:37.624 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 00:22:38.769 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:22:40.490 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:22:40.538 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:22:40.538 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:22:40.586 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:22:40.602 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:22:40.618 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 00:22:40.618 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:22:42.505 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 00:22:42.521 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 00:22:42.537 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1556468562521 with initial instances count: 0
+[cms] 00:22:42.537 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application CONFIG-SERVER with eureka with status UP
+[cms] 00:22:42.553 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1556468562553, current=UP, previous=STARTING]
+[cms] 00:22:42.842 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8082 (http) with context path ''
+[cms] 00:22:42.842 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8082
+[cms] 00:22:42.859 [main] INFO  com.white.configserver.ConfigServerApplication[59] - Started ConfigServerApplication in 57.244 seconds (JVM running for 135.864)
+[cms] 00:22:45.475 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082: registering service...
+[cms] 00:22:47.248 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082: registering service...
+[cms] 00:22:50.072 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082 - registration status: 204
+[cms] 00:23:12.508 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:23:12.510 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:23:12.540 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:23:12.545 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:23:12.552 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:23:12.566 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 00:23:12.575 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:23:12.739 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 00:27:34.976 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f0fd07b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:27:39.091 [main] INFO  com.white.configserver.ConfigServerApplication[679] - The following profiles are active: dev
+[cms] 00:28:01.452 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=3b71385d-5168-3e50-8d93-c328bbb49805
+[cms] 00:28:02.924 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6f0fd07b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 00:28:08.864 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8082 (http)
+[cms] 00:28:09.192 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 00:28:09.220 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 00:28:11.412 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 00:28:11.782 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 32626 ms
+[cms] 00:28:12.873 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:28:13.053 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@763aa0ed
+[cms] 00:28:20.344 [main] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:28:28.212 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 00:28:28.554 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 00:28:29.330 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 00:28:42.567 [main] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:28:42.801 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 20 endpoint(s) beneath base path '/actuator'
+[cms] 00:28:43.069 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 00:28:43.279 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 00:28:43.632 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 00:28:43.648 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 00:28:44.148 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 00:28:44.180 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 00:28:44.820 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:28:48.322 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:28:48.936 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:28:49.120 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:28:49.211 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:28:49.304 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:28:49.397 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 00:28:49.413 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:28:50.363 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 00:28:50.363 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 00:28:50.385 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 00:28:50.402 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1556468930399 with initial instances count: 0
+[cms] 00:28:50.411 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application CONFIG-SERVER with eureka with status UP
+[cms] 00:28:50.427 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1556468930427, current=UP, previous=STARTING]
+[cms] 00:28:50.780 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8082 (http) with context path ''
+[cms] 00:28:50.797 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8082
+[cms] 00:28:50.813 [main] INFO  com.white.configserver.ConfigServerApplication[59] - Started ConfigServerApplication in 87.752 seconds (JVM running for 170.965)
+[cms] 00:29:02.123 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:29:02.212 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082: registering service...
+[cms] 00:29:02.397 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_CONFIG-SERVER/localhost:config-server:8082 - registration status: 204
+[cms] 00:29:06.270 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:29:20.377 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 00:29:20.380 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 00:29:20.382 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 00:29:20.385 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 00:29:20.387 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 00:29:20.400 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: false
+[cms] 00:29:20.411 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 00:29:20.592 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 00:29:40.068 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:29:55.744 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 00:29:55.748 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 00:29:55.772 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 22 ms
+[cms] 00:30:00.116 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:30:15.908 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:30:19.982 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:30:39.653 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:30:58.072 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:03.019 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:07.192 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:28.997 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:33.758 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:49.820 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:55.238 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:31:55.496 [http-nio-8082-exec-1] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/gateway-server-dev.yml
+[cms] 00:31:55.589 [http-nio-8082-exec-1] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/application.yml
+[cms] 00:32:04.237 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:32:04.649 [http-nio-8082-exec-2] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/user-server/user-server-dev.yml
+[cms] 00:32:04.761 [http-nio-8082-exec-2] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/user-server/application.yml
+[cms] 00:32:14.064 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:32:23.053 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:32:30.520 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:32:47.697 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:32:52.671 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:05.786 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:25.641 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:30.131 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:34.416 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:34.701 [http-nio-8082-exec-3] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/user-server/user-server-dev.yml
+[cms] 00:33:34.714 [http-nio-8082-exec-3] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/user-server/application.yml
+[cms] 00:33:46.957 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:33:49.520 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:34:04.028 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:34:09.158 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:34:26.098 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:34:38.196 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:34:45.933 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:35:07.159 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:35:12.346 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:35:25.988 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:35:46.297 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:35:49.708 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:36:06.682 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:36:23.319 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:36:27.292 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:36:46.466 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:36:57.181 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:37:06.629 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:37:25.895 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:37:31.037 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:37:44.493 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:37:44.580 [http-nio-8082-exec-8] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/gateway-server-dev.yml
+[cms] 00:37:44.584 [http-nio-8082-exec-8] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/application.yml
+[cms] 00:37:48.959 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:04.826 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:08.042 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:25.762 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:39.507 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:46.988 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:38:49.544 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:39:05.681 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:39:13.038 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:39:26.228 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:39:45.770 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:39:49.156 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:40:06.180 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:40:23.904 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:40:27.159 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:40:45.485 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:40:57.976 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:41:10.427 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:41:26.012 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:41:31.609 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:41:45.896 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:42:05.498 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:42:08.830 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:42:27.178 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:42:38.906 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:42:45.670 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:43:05.999 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:43:12.948 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:43:25.560 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:43:49.550 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:43:51.780 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:43:55.396 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:44:05.731 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:44:25.814 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:44:28.923 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:44:45.867 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:45:02.336 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:45:06.760 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:45:26.836 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:45:36.222 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:45:45.843 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:05.785 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:10.420 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:28.079 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:47.232 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:50.573 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:50.651 [http-nio-8082-exec-2] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/gateway-server-dev.yml
+[cms] 00:46:50.653 [http-nio-8082-exec-2] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/application.yml
+[cms] 00:46:55.789 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:46:59.869 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:47:15.895 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:47:21.064 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:47:36.159 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:47:54.593 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:47:58.037 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:48:01.833 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:48:01.873 [http-nio-8082-exec-4] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/gateway-server-dev.yml
+[cms] 00:48:01.876 [http-nio-8082-exec-4] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/application.yml
+[cms] 00:48:17.012 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:48:29.576 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:48:35.620 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:48:49.557 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:48:56.332 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:49:03.216 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:49:15.853 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:49:35.598 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:49:39.071 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:49:56.325 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:50:13.736 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:50:17.051 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:50:36.162 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:50:47.498 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:50:56.889 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:51:15.761 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:51:21.787 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:51:36.129 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:51:55.997 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:51:59.398 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:52:15.620 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:52:29.319 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:52:42.423 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:52:47.155 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:53:03.442 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:53:07.253 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:53:27.433 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:53:42.143 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:53:49.564 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:53:49.842 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:54:07.582 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:54:17.506 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:54:28.631 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:54:46.920 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:54:53.727 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:55:09.073 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:55:27.240 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:55:33.701 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:55:46.732 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:56:09.045 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:56:14.030 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:56:30.802 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:56:46.758 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:56:57.395 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:57:07.098 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:57:25.941 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:57:34.562 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:57:47.478 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:06.415 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:10.436 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:26.694 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:35.725 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:35.770 [http-nio-8082-exec-8] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/gateway-server-dev.yml
+[cms] 00:58:35.774 [http-nio-8082-exec-8] INFO  org.springframework.cloud.config.server.environment.NativeEnvironmentRepository[264] - Adding property source: file:/C:/Users/white/AppData/Local/Temp/config-repo-3556125729064775154/gateway-server/application.yml
+[cms] 00:58:44.695 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:48.576 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:58:49.566 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 00:59:05.943 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:59:18.794 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:59:25.483 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:59:46.652 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 00:59:52.366 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:00:06.751 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:00:25.877 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:00:29.537 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:00:45.675 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:01:02.939 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:01:06.133 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:01:25.853 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:01:36.624 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:01:45.996 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:02:05.806 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:02:09.909 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:02:25.872 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:02:43.134 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:02:46.393 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:03:05.818 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:03:16.477 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:03:25.797 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:03:45.545 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:03:49.570 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 01:03:50.242 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:04:05.940 [http-nio-8082-exec-1] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:04:23.553 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:04:26.768 [http-nio-8082-exec-2] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:04:45.448 [http-nio-8082-exec-8] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:04:56.880 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:05:06.021 [http-nio-8082-exec-10] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:05:25.699 [http-nio-8082-exec-9] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:05:30.080 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:05:46.106 [http-nio-8082-exec-7] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:06:03.868 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:06:07.618 [http-nio-8082-exec-6] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:06:25.789 [http-nio-8082-exec-5] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:06:37.630 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:06:45.462 [http-nio-8082-exec-4] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
+[cms] 01:07:06.724 [http-nio-8082-exec-3] INFO  org.springframework.cloud.commons.util.InetUtils[170] - Cannot determine local hostname
