@@ -28,6 +28,8 @@
         <module>config-server</module>
         <module>admin-server</module>
         <module>user-server</module>
+        <module>order-server</module>
+        <module>resource-server</module>
     </modules>
 
     <build>

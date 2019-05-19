@@ -1,0 +1,37 @@
+[cms] 12:28:33.025 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 12:28:41.183 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:29:02.869 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:35:36.379 [http-nio-8081-exec-3] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 12:35:36.396 [TaskBatchingWorker-target_127.0.0.1-4] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 12:35:36.403 [TaskBatchingWorker-target_127.0.0.1-4] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.
+[cms] 12:53:18.801 [http-nio-8081-exec-3] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082
+[cms] 12:53:18.809 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1 failed with response code 404
+[cms] 12:53:18.812 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1: missing entry.
+[cms] 12:53:26.995 [http-nio-8081-exec-1] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 12:53:27.111 [TaskBatchingWorker-target_127.0.0.1-1] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 12:53:27.139 [TaskBatchingWorker-target_127.0.0.1-1] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.
+[cms] 12:56:23.079 [Eureka-EvictionTimer] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[623] - DS: Registry: expired lease for USER-SERVER/DESKTOP-DIC4SEB:user-server:8085
+[cms] 13:13:17.611 [http-nio-8081-exec-4] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 13:13:17.617 [TaskBatchingWorker-target_127.0.0.1-2] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 13:13:17.619 [TaskBatchingWorker-target_127.0.0.1-2] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.
+[cms] 13:43:54.449 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 13:43:59.172 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 13:44:05.609 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:47:31.707 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 17:47:40.960 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:47:47.345 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 18:03:10.131 [http-nio-8081-exec-7] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: USER-SERVER/DESKTOP-DIC4SEB:user-server:8085
+[cms] 18:03:10.155 [TaskBatchingWorker-target_127.0.0.1-18] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task USER-SERVER/DESKTOP-DIC4SEB:user-server:8085:Cancel@127.0.0.1 failed with response code 404
+[cms] 18:03:10.163 [TaskBatchingWorker-target_127.0.0.1-18] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - USER-SERVER/DESKTOP-DIC4SEB:user-server:8085:Cancel@127.0.0.1: missing entry.
+[cms] 18:09:18.198 [http-nio-8081-exec-2] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082
+[cms] 18:09:18.205 [TaskBatchingWorker-target_127.0.0.1-19] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1 failed with response code 404
+[cms] 18:09:18.207 [TaskBatchingWorker-target_127.0.0.1-19] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1: missing entry.
+[cms] 18:09:20.332 [http-nio-8081-exec-9] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 18:09:20.345 [TaskBatchingWorker-target_127.0.0.1-9] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 18:09:20.357 [TaskBatchingWorker-target_127.0.0.1-9] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.
+[cms] 18:44:24.371 [http-nio-8081-exec-4] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 18:44:24.380 [TaskBatchingWorker-target_127.0.0.1-7] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 18:44:24.383 [TaskBatchingWorker-target_127.0.0.1-7] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.
+[cms] 19:27:07.342 [http-nio-8081-exec-5] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083
+[cms] 19:27:07.517 [TaskBatchingWorker-target_127.0.0.1-0] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1 failed with response code 404
+[cms] 19:27:07.521 [TaskBatchingWorker-target_127.0.0.1-0] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - ADMIN-SERVER/DESKTOP-DIC4SEB:admin-server:8083:Cancel@127.0.0.1: missing entry.

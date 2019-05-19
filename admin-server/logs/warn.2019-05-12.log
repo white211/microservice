@@ -1,0 +1,55 @@
+[cms] 12:28:50.910 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 12:28:58.331 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:29:13.336 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:29:15.739 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 12:29:39.201 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 12:35:32.733 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557635732733, current=DOWN, previous=UP]
+[cms] 12:35:32.742 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557635732742, current=UP, previous=DOWN]
+[cms] 12:36:21.227 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 12:36:25.899 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:36:28.279 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:36:29.248 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 12:36:36.275 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 12:53:23.232 [Thread-11] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557636803232, current=DOWN, previous=UP]
+[cms] 12:53:23.259 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557636803259, current=UP, previous=DOWN]
+[cms] 12:54:19.282 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 12:54:29.038 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:54:37.121 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 12:54:38.676 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 12:54:58.879 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 13:13:13.989 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557637993989, current=DOWN, previous=UP]
+[cms] 13:13:13.998 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557637993998, current=UP, previous=DOWN]
+[cms] 13:13:14.054 [reactor-http-nio-1] WARN  reactor.netty.http.client.HttpClientConnect[299] - [id: 0x017095fc, L:0.0.0.0/0.0.0.0:60969 ! R:/192.168.1.102:8082] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+[cms] 13:46:08.454 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 13:46:13.701 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 13:46:17.260 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 13:46:18.878 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 13:46:28.362 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 17:18:25.535 [Thread-11] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557652705534, current=DOWN, previous=UP]
+[cms] 17:18:25.559 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557652705559, current=UP, previous=DOWN]
+[cms] 17:18:25.990 [reactor-http-nio-4] WARN  reactor.netty.http.client.HttpClientConnect[299] - [id: 0x5dce3634, L:0.0.0.0/0.0.0.0:50817 ! R:/192.168.1.102:8082] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+[cms] 17:18:30.187 [Thread-11] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[cms] 17:18:31.229 [Thread-11] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[cms] 17:48:26.648 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 17:48:33.906 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:48:46.151 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:48:52.027 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 17:49:13.614 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 18:09:16.522 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557655756522, current=DOWN, previous=UP]
+[cms] 18:09:16.536 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557655756536, current=UP, previous=DOWN]
+[cms] 18:10:02.274 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 18:10:07.691 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 18:10:13.438 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 18:10:16.819 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 18:10:27.457 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 18:44:20.555 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557657860555, current=DOWN, previous=UP]
+[cms] 18:44:20.575 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557657860575, current=UP, previous=DOWN]
+[cms] 18:45:09.683 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 18:45:15.584 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 18:45:19.965 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 18:45:21.700 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[cms] 18:45:38.203 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
+[cms] 19:27:03.709 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557660423709, current=DOWN, previous=UP]
+[cms] 19:27:03.721 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557660423721, current=UP, previous=DOWN]

@@ -403,3 +403,105 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 [cms] 17:52:19.097 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
 [cms] 17:52:19.142 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 18:05:12.592 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f7e0d420] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:13.902 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 18:05:14.069 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 18:05:15.645 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 18:05:15.651 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 18:05:16.042 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 18:05:16.045 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 18:05:16.575 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 18:05:17.366 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 18:05:17.368 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 18:05:17.370 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 18:05:17.371 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 18:05:17.373 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 18:05:17.374 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 18:05:17.376 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 18:05:17.767 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 18:05:17.774 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 18:05:17.787 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557655517785 with initial instances count: 2
+[cms] 18:05:19.773 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.102:8082/
+[cms] 18:05:22.758 [main] INFO  com.white.gatewayserver.GatewayServerApplication[679] - The following profiles are active: dev
+[cms] 18:05:24.935 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 18:05:25.070 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 113ms. Found 0 repository interfaces.
+[cms] 18:05:26.146 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=385286a7-0cef-3af4-bbc2-319dd7033c1b
+[cms] 18:05:26.181 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'shiroConfig' of type [com.white.gatewayserver.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$472b606b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:26.299 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'myRealm' of type [com.white.gatewayserver.config.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:26.574 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:26.845 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:27.086 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dbc6d123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:27.661 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f7e0d420] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:05:29.257 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8080 (http)
+[cms] 18:05:29.416 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 18:05:29.418 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 18:05:29.849 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 18:05:29.851 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 7065 ms
+[cms] 18:05:30.321 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 18:05:30.370 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@61a871d1
+[cms] 18:05:33.020 [main] INFO  org.apache.catalina.core.StandardService[173] - Stopping service [Tomcat]
+[cms] 18:05:33.146 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cms] 18:05:33.153 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 18:05:33.175 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 18:07:00.604 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$972a7535] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:07:01.815 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 18:07:02.021 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 18:07:03.694 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 18:07:03.696 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 18:07:03.987 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 18:07:03.991 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 18:07:04.562 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 18:07:05.414 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 18:07:05.416 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 18:07:05.419 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 18:07:05.420 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 18:07:05.422 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 18:07:05.424 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 18:07:05.455 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 18:07:05.824 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 18:07:05.831 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 18:07:05.843 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557655625840 with initial instances count: 2
+[cms] 18:07:07.375 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.102:8082/
+[cms] 18:07:11.885 [main] INFO  com.white.gatewayserver.GatewayServerApplication[679] - The following profiles are active: dev
+[cms] 18:11:25.629 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$504217ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:11:26.833 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 18:11:26.989 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 18:11:28.640 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 18:11:28.643 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 18:11:29.095 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 18:11:29.103 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 18:11:30.287 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 18:11:31.597 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 18:11:31.600 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 18:11:31.603 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 18:11:31.605 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 18:11:31.608 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 18:11:31.612 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 18:11:31.691 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 18:11:32.515 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 18:11:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 18:11:32.551 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557655892547 with initial instances count: 2
+[cms] 18:11:35.274 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.102:8082/
+[cms] 18:11:38.476 [main] INFO  com.white.gatewayserver.GatewayServerApplication[679] - The following profiles are active: dev
+[cms] 18:46:58.219 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3de38608] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 18:46:59.538 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 18:46:59.689 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 18:47:01.435 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 18:47:01.437 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 18:47:01.796 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 18:47:01.800 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 18:47:02.436 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 18:47:03.195 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 18:47:03.197 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 18:47:03.200 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 18:47:03.239 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 18:47:03.241 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 18:47:03.242 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 18:47:03.244 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 18:47:03.659 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 18:47:03.668 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 18:47:03.680 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557658023677 with initial instances count: 2
+[cms] 18:47:06.112 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.102:8082/
+[cms] 18:47:09.204 [main] INFO  com.white.gatewayserver.GatewayServerApplication[679] - The following profiles are active: dev

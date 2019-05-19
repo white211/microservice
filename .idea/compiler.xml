@@ -10,6 +10,8 @@
         <module name="config-server" />
         <module name="eureka-server" />
         <module name="gateway-server" />
+        <module name="order-server" />
+        <module name="resource-server" />
         <module name="user-server" />
       </profile>
     </annotationProcessing>
@@ -19,6 +21,8 @@
       <module name="eureka-server" target="1.8" />
       <module name="gateway-server" target="1.8" />
       <module name="microservice" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="resource-server" target="1.8" />
       <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
