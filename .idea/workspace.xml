@@ -2,52 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a06b216-6569-4323-acbb-3de8aafe48e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Desc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/OrderDruidDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/ExchangeConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/MqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/QueueConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/mqcallback/MsgSendConfirmCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/receiver/FirstConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/helper/JedisHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/dto/OrdOrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/OrderUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Desc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Exception/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/ResourceDruidDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/helper/JedisHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/PreFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/InterceptorHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/logs/warn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/error.log" afterDir="false" />
@@ -59,9 +17,33 @@
       <change beforePath="$PROJECT_DIR$/gateway-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/ExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/ExceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/GateWayDruidDataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/JwtToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/MyRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/ShiroConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/controller/TbResourceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/JedisHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/JedisHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/mapper/TbResourceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/pojo/entity/TbResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/pojo/entity/TbUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/service/TbResourceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/service/impl/TbResourceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/util/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/util/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/mybatis/mapper/TbResourceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/warn.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/jwt/JwtUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/gateway-server/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,62 +77,77 @@
     <session id="36087574">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="59" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.27" value="4" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="3" />
+          <entry key="project.open.time.27" value="5" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.31" value="2" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.31" value="3" />
+          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="3" />
+          <entry key="project.open.time.38" value="2" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="9" />
-          <entry key="java" value="286" />
-          <entry key="md" value="1" />
-          <entry key="properties" value="12" />
+          <entry key="MD" value="2" />
+          <entry key="class" value="12" />
+          <entry key="java" value="344" />
+          <entry key="log" value="2" />
+          <entry key="md" value="2" />
+          <entry key="properties" value="15" />
           <entry key="txt" value="6" />
           <entry key="xml" value="45" />
-          <entry key="yml" value="57" />
+          <entry key="yml" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="286" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Properties" value="12" />
+          <entry key="CLASS" value="12" />
+          <entry key="JAVA" value="344" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Properties" value="15" />
           <entry key="XML" value="45" />
-          <entry key="YAML" value="57" />
+          <entry key="YAML" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="MD" value="315" />
           <entry key="dummy" value="13" />
-          <entry key="java" value="5860" />
+          <entry key="java" value="6800" />
+          <entry key="md" value="22" />
           <entry key="xml" value="255" />
           <entry key="yml" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5860" />
+          <entry key="JAVA" value="6800" />
+          <entry key="Markdown" value="337" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="SQL" value="8" />
           <entry key="XML" value="247" />
@@ -186,16 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/mybatis/mapper/TbUserMapper.xml" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserService.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUser.java" />
-        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/MainsiteErrorController.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/Routes.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbUserController.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbResourceService.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbResourceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/JwtFilter.java" />
         <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/AuthFilter.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/config/SystemUrlConfig.java" />
         <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/service/SysUrlService.java" />
@@ -235,8 +222,18 @@
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrderItem.java" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/OrderUtil.java" />
-        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/Product.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java" />
+        <option value="$PROJECT_DIR$/gateway-server/HELP.md" />
+        <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/InterceptorHelper.java" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/JedisHelper.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/jwt/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/util/jwt/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/PreFilter.java" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/TokenFilter.java" />
+        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/ExceptionController.java" />
       </list>
     </option>
   </component>
@@ -273,8 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,14 +282,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557740625371" />
-    <property name="last_opened_file_path" value="C:/yinmi/inmitech-dearunner" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561303904590" />
+    <property name="last_opened_file_path" value="C:/yinmi/inmi-springcloud/inmi-inv" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -499,11 +496,42 @@
       <workItem from="1558234753873" duration="2745000" />
       <workItem from="1558243015085" duration="1130000" />
       <workItem from="1558250840298" duration="1223000" />
+      <workItem from="1558255294378" duration="747000" />
+      <workItem from="1558266862281" duration="614000" />
+      <workItem from="1559043825834" duration="1795000" />
+      <workItem from="1559095023267" duration="86000" />
+      <workItem from="1559139222279" duration="1625000" />
+      <workItem from="1559180631445" duration="126000" />
+      <workItem from="1559303135000" duration="596000" />
+      <workItem from="1559357469203" duration="90000" />
+      <workItem from="1559477422510" duration="598000" />
+      <workItem from="1559525634425" duration="303000" />
+      <workItem from="1559576896215" duration="1599000" />
+      <workItem from="1559612138747" duration="113000" />
+      <workItem from="1559647829675" duration="595000" />
+      <workItem from="1559651585805" duration="6627000" />
+      <workItem from="1559699783345" duration="668000" />
+      <workItem from="1559732330194" duration="416000" />
+      <workItem from="1559734130877" duration="1976000" />
+      <workItem from="1559785969945" duration="168000" />
+      <workItem from="1559823178965" duration="2391000" />
+      <workItem from="1559873798445" duration="1770000" />
+      <workItem from="1560090759283" duration="380000" />
+      <workItem from="1560935644228" duration="3820000" />
+      <workItem from="1560943033481" duration="4370000" />
+      <workItem from="1560956505149" duration="2403000" />
+      <workItem from="1561126405786" duration="1220000" />
+      <workItem from="1561172323533" duration="598000" />
+      <workItem from="1561188050873" duration="746000" />
+      <workItem from="1561200574939" duration="598000" />
+      <workItem from="1561213608673" duration="598000" />
+      <workItem from="1561275798640" duration="2744000" />
+      <workItem from="1561382292356" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104126000" />
+    <option name="totallyTimeSpent" value="145707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,7 +545,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -532,13 +560,13 @@
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.82580644" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5015129" side_tool="true" weight="0.7887097" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32903227" />
-      <window_info anchor="bottom" id="Spring" order="9" weight="0.32850242" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32741934" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.83387095" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49924356" weight="0.66827697" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49848714" weight="0.90645164" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -620,242 +648,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/shiro/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/GatewayServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/UserServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="200" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/ResourceDruidDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Desc.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/helper/JedisHelper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Result.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/CommonException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Exception/CommonException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/common/Exception/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResLogisticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/Routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/OrderDruidDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/mqcallback/MsgSendConfirmCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/Routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/dto/OrdOrderDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.1.9/mybatis-plus-support-2.1.9.jar!/com/baomidou/mybatisplus/service/IService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1107">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.5.RELEASE/spring-rabbit-2.1.5.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="543" column="16" selection-start-line="543" selection-start-column="16" selection-end-line="543" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/ExchangeConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -884,34 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/receiver/FirstConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="72" lean-forward="true" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.5.RELEASE/spring-rabbit-2.1.5.RELEASE.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -931,6 +695,292 @@
         <state relative-caret-position="348">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderFlowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/dto/OrdOrderDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.5.RELEASE/spring-rabbit-2.1.5.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="543" column="16" selection-start-line="543" selection-start-column="16" selection-end-line="543" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/receiver/FirstConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/GateWayDruidDataSource.java" />
+    <entry file="file://$PROJECT_DIR$/gateway-server/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret column="5" selection-start-column="5" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/GatewayServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/config/SystemUrlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbUserRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbRoleResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/InterceptorHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/helper/JedisHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="189">
+            <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/jwt/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="73" column="3" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/util/jwt/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="176" column="16" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/helper/JedisHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/CommonException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/PreFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/common/Exception/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/logs/info.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/logs/warn.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134" />
       </provider>
     </entry>
   </component>

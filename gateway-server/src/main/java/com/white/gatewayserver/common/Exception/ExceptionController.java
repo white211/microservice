@@ -71,10 +71,10 @@ public class ExceptionController {
      * @Return: com.naswork.erp.common.Result
      * @Throws:
      */
-//    @ExceptionHandler(CommonException.class)
-//    public Result commonException(Result result){
-//        return result;
-//    }
+    @ExceptionHandler(CommonException.class)
+    public Result commonException(CommonException e){
+        return e.getResult();
+    }
 
     /*
      * @Author: Create by white

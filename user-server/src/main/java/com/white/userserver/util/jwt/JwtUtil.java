@@ -25,11 +25,12 @@ public class JwtUtil {
      * @Return: boolean
      * @Throws:
      */
-    public static boolean verify(String token,String username,String password){
+    public static boolean verify(String token,String username,String password,String userId){
         try{
             Algorithm algorithm = Algorithm.HMAC256(password);
             JWTVerifier jwtVerifier = JWT.require(algorithm)
                     .withClaim("username",username)
+                    .withClaim("userId",userId)
                     .build();
             DecodedJWT decodedJWT = jwtVerifier.verify(token);
             return true;
@@ -54,7 +55,16 @@ public class JwtUtil {
         }
     }
 
-    public static String sign(String username,String password){
+    public static String getUserId(String token){
+        try{
+            DecodedJWT decodedJWT = JWT.decode(token);
+            return decodedJWT.getClaim("userId").asString();
+        }catch (Exception e){
+            return null;
+        }
+    }
+
+    public static String sign(String username,String password,String userId){
         /*
          * @Author: Create by white
          * @Datetime: 2018/11/26 14:38
@@ -68,6 +78,7 @@ public class JwtUtil {
             Algorithm algorithm = Algorithm.HMAC256(password);
             return JWT.create()
                     .withClaim("username",username)
+                    .withClaim("userId",userId)
                     .withExpiresAt(date)
                     .sign(algorithm);
         }catch (Exception e){

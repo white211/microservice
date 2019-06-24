@@ -1,6 +1,7 @@
 package com.white.gatewayserver.helper;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;
@@ -38,7 +39,7 @@ public class JedisHelper {
     private JedisHelper() {
     }
 
-    // TODO: 2019/4/8 借用wkclz.com 初始化会失败 暂时不知道问题所在
+
     public JedisPool getPool() {
         if (this.jedisPool == null) {
             throw new NullPointerException("jedisPool is not init");

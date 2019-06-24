@@ -1,0 +1,545 @@
+[cms] 12:11:00.273 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de755f11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 12:11:05.006 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 12:11:05.419 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 12:11:11.830 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 12:11:11.895 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 12:11:13.674 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 12:11:13.697 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 12:11:19.014 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:11:21.982 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 12:11:22.171 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 12:11:22.216 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 12:11:22.235 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 12:11:22.245 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 12:11:22.247 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 12:11:22.250 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 12:11:23.583 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 12:11:23.690 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 12:11:23.875 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557720683871 with initial instances count: 2
+[cms] 12:11:29.416 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:11:34.063 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:11:34.068 [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration[98] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/order-server-dev.yml'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/application.yml'}]}
+[cms] 12:11:34.540 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 12:11:40.341 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 12:11:40.748 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 294ms. Found 0 repository interfaces.
+[cms] 12:11:45.017 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=2473f1c9-21a0-36bd-ad58-b6af837ad54f
+[cms] 12:11:46.864 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c25b5c14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 12:11:47.706 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de755f11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 12:11:51.668 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8086 (http)
+[cms] 12:11:52.247 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 12:11:52.252 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 12:11:53.235 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 12:11:53.256 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 18652 ms
+[cms] 12:11:54.225 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 12:11:55.424 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1c93c85f
+[cms] 12:12:06.492 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 12:12:16.048 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - order - Starting...
+[cms] 12:12:18.539 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - order - Start completed.
+[cms] 12:12:22.173 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 12:12:26.265 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 12:12:46.797 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 12:12:47.268 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 12:12:47.497 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 21 endpoint(s) beneath base path '/actuator'
+[cms] 12:12:48.842 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 12:12:49.096 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 12:12:49.621 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 12:12:49.981 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 12:12:50.072 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 12:12:50.084 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 12:12:50.749 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:12:50.857 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 12:12:51.307 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 12:12:51.457 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 12:12:51.530 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 12:12:51.679 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 12:12:51.753 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 12:12:51.865 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 12:12:51.955 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 12:12:51.969 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 12:12:52.026 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 12:12:52.065 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557720772065 with initial instances count: 2
+[cms] 12:12:52.140 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application ORDER-SERVER with eureka with status UP
+[cms] 12:12:52.569 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1557720772569, current=UP, previous=STARTING]
+[cms] 12:12:52.705 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 12:12:53.024 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8086 (http) with context path ''
+[cms] 12:12:53.241 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8086
+[cms] 12:12:53.470 [main] INFO  com.white.orderserver.OrderServerApplication[59] - Started OrderServerApplication in 131.83 seconds (JVM running for 409.316)
+[cms] 12:12:54.539 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 12:13:08.190 [http-nio-8086-exec-10] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 12:13:08.219 [http-nio-8086-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 12:13:08.452 [http-nio-8086-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 124 ms
+[cms] 12:13:08.897 [http-nio-8086-exec-10] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[460] - Attempting to connect to: [localhost:5672]
+[cms] 12:13:09.504 [http-nio-8086-exec-10] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[496] - Created new connection: rabbitConnectionFactory#6c2069d7:0/SimpleConnection@db367a7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62562]
+[cms] 12:13:11.598 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:13:15.687 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:17:51.935 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:18:15.436 [http-nio-8086-exec-1] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:18:18.485 [http-nio-8086-exec-1] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:22:51.941 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:23:35.375 [http-nio-8086-exec-7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:23:38.775 [http-nio-8086-exec-7] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:27:51.945 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:28:55.290 [http-nio-8086-exec-4] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:28:59.378 [http-nio-8086-exec-4] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:32:51.947 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:33:55.368 [http-nio-8086-exec-6] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:33:58.497 [http-nio-8086-exec-6] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:37:51.951 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:39:15.338 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:39:19.468 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:42:51.955 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:44:15.388 [http-nio-8086-exec-5] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:44:18.247 [http-nio-8086-exec-5] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:47:51.960 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:49:15.652 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:49:19.374 [http-nio-8086-exec-10] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:52:51.966 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:54:35.343 [http-nio-8086-exec-3] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 12:54:38.860 [http-nio-8086-exec-3] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 12:57:51.968 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:58:51.443 [Thread-7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application ORDER-SERVER with eureka with status DOWN
+[cms] 12:58:51.505 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 12:58:51.598 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 12:58:53.239 [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 12:58:53.860 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 12:58:56.869 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[922] - Unregistering ...
+[cms] 12:58:57.032 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[924] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - deregister  status: 200
+[cms] 12:58:57.107 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 12:58:57.122 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[350] - order - Shutdown initiated...
+[cms] 12:58:57.248 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[352] - order - Shutdown completed.
+[cms] 12:58:57.213 [http-nio-8086-exec-4] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 12:58:57.292 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 12:58:57.541 [http-nio-8086-exec-4] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 12:58:57.550 [http-nio-8086-exec-4] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 12:58:57.560 [http-nio-8086-exec-4] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 12:58:57.571 [http-nio-8086-exec-4] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 12:58:58.220 [http-nio-8086-exec-4] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 12:58:58.257 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 12:58:58.263 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 12:58:58.267 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 12:58:58.271 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 12:58:58.275 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 12:58:58.278 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 12:58:58.281 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 12:58:58.321 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 12:58:58.340 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 12:58:58.347 [http-nio-8086-exec-4] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 12:58:58.359 [http-nio-8086-exec-4] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557723538356 with initial instances count: 3
+[cms] 13:15:08.142 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c8e95430] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 13:15:09.561 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 13:15:09.744 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 13:15:11.494 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 13:15:11.498 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 13:15:11.862 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 13:15:11.865 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 13:15:12.559 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 13:15:13.365 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 13:15:13.368 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 13:15:13.370 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 13:15:13.371 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 13:15:13.373 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 13:15:13.374 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 13:15:13.375 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 13:15:13.992 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 13:15:14.012 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 13:15:14.029 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557724514025 with initial instances count: 2
+[cms] 13:15:15.931 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 13:15:19.159 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 13:15:19.162 [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration[98] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/order-server-dev.yml'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/application.yml'}]}
+[cms] 13:15:19.385 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 13:15:21.758 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 13:15:21.850 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 78ms. Found 0 repository interfaces.
+[cms] 13:15:23.086 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=2473f1c9-21a0-36bd-ad58-b6af837ad54f
+[cms] 13:15:23.703 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$accf5133] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 13:15:23.872 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c8e95430] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 13:15:25.169 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8086 (http)
+[cms] 13:15:25.289 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 13:15:25.308 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 13:15:25.950 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 13:15:25.956 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 6544 ms
+[cms] 13:15:26.497 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 13:15:26.592 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@f59da59
+[cms] 13:15:28.994 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 13:15:29.747 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - order - Starting...
+[cms] 13:15:30.165 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - order - Start completed.
+[cms] 13:15:31.349 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 13:15:32.175 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 13:15:37.582 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 13:15:37.615 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 13:15:37.658 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 21 endpoint(s) beneath base path '/actuator'
+[cms] 13:15:38.462 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 13:15:38.573 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 13:15:38.649 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 13:15:38.660 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 13:15:38.676 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 13:15:38.695 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 13:15:38.997 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 13:15:39.059 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 13:15:39.117 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 13:15:39.176 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 13:15:39.187 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 13:15:39.196 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 13:15:39.262 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 13:15:39.266 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 13:15:39.372 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 13:15:39.389 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 13:15:39.395 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 13:15:39.400 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557724539400 with initial instances count: 2
+[cms] 13:15:39.407 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application ORDER-SERVER with eureka with status UP
+[cms] 13:15:39.427 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1557724539427, current=UP, previous=STARTING]
+[cms] 13:15:39.514 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 13:15:39.919 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8086 (http) with context path ''
+[cms] 13:15:39.965 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8086
+[cms] 13:15:39.971 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 13:15:39.977 [main] INFO  com.white.orderserver.OrderServerApplication[59] - Started OrderServerApplication in 36.179 seconds (JVM running for 109.473)
+[cms] 13:16:09.733 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 13:16:09.734 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 13:16:09.760 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 25 ms
+[cms] 13:16:09.912 [http-nio-8086-exec-1] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[460] - Attempting to connect to: [localhost:5672]
+[cms] 13:16:10.126 [http-nio-8086-exec-1] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[496] - Created new connection: rabbitConnectionFactory#7fbde744:0/SimpleConnection@7d853da4 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51452]
+[cms] 13:16:11.476 [http-nio-8086-exec-1] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 13:16:13.949 [http-nio-8086-exec-1] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=647963d3f3e68db59b417dd109ca8a7c1022c6d0, state=null
+[cms] 13:20:22.222 [Thread-7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application ORDER-SERVER with eureka with status DOWN
+[cms] 13:20:22.225 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 13:20:22.237 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 13:20:22.256 [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 13:20:22.311 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 13:20:25.316 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[922] - Unregistering ...
+[cms] 13:20:25.343 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[924] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - deregister  status: 200
+[cms] 13:20:25.378 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 13:20:25.384 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[350] - order - Shutdown initiated...
+[cms] 13:20:25.396 [http-nio-8086-exec-7] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 13:20:25.408 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 13:20:25.416 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[352] - order - Shutdown completed.
+[cms] 13:20:25.441 [http-nio-8086-exec-7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 13:20:25.451 [http-nio-8086-exec-7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 13:20:25.453 [http-nio-8086-exec-7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 13:20:25.454 [http-nio-8086-exec-7] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 13:20:25.810 [http-nio-8086-exec-7] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 13:20:25.880 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 13:20:25.887 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 13:20:25.898 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 13:20:25.903 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 13:20:25.906 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 13:20:25.987 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 13:20:26.008 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 13:20:26.033 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 13:20:26.073 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 13:20:26.076 [http-nio-8086-exec-7] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 13:20:26.102 [http-nio-8086-exec-7] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557724826102 with initial instances count: 3
+[cms] 16:43:15.554 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5ff3921c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:43:27.382 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 16:43:29.116 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 16:43:35.658 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 16:43:35.747 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 16:43:36.664 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 16:43:36.977 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 16:43:41.977 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:43:45.614 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:43:45.650 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:43:45.664 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:43:45.667 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:43:45.671 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:43:45.674 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 16:43:45.685 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:43:48.146 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:43:48.158 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 16:43:48.203 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557737028197 with initial instances count: 0
+[cms] 16:43:53.741 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://localhost:8888
+[cms] 16:43:56.645 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[227] - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+[cms] 16:43:56.749 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 16:44:03.271 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 16:44:03.408 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 119ms. Found 0 repository interfaces.
+[cms] 16:44:05.100 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=cdcf19d9-b2da-3988-b6e5-47939e6f0d49
+[cms] 16:44:05.688 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43d98f1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:44:06.128 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5ff3921c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:44:08.357 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8080 (http)
+[cms] 16:44:08.592 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 16:44:08.675 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 16:44:12.197 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 16:44:12.707 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 15789 ms
+[cms] 16:44:17.585 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 16:44:18.178 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@756c1bb4
+[cms] 16:44:18.344 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:44:18.471 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:44:18.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:44:18.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:44:18.502 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:44:18.625 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: false
+[cms] 16:44:18.844 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:44:19.003 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:44:21.932 [main] INFO  org.apache.catalina.core.StandardService[173] - Stopping service [Tomcat]
+[cms] 16:44:22.140 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cms] 16:44:22.283 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 16:44:23.264 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 16:47:24.431 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2e4b0e61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:47:25.642 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 16:47:25.822 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 16:47:27.569 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 16:47:27.571 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 16:47:27.889 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 16:47:27.893 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 16:47:28.493 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:47:29.339 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:47:29.341 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:47:29.344 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:47:29.377 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:47:29.379 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:47:29.380 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 16:47:29.381 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:47:29.778 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:47:29.784 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 16:47:29.795 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557737249793 with initial instances count: 1
+[cms] 16:47:31.995 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 16:47:35.098 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=948b19de53803557e96fde7854ed2df7181ebcc3, state=null
+[cms] 16:47:35.104 [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration[98] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/order-server-dev.yml'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/application.yml'}]}
+[cms] 16:47:35.412 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 16:47:38.353 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 16:47:38.458 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 90ms. Found 0 repository interfaces.
+[cms] 16:47:39.649 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=e0089606-2fa0-356c-91a7-987fe1340fb0
+[cms] 16:47:40.087 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12310b64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:47:40.273 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2e4b0e61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:47:42.155 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8086 (http)
+[cms] 16:47:42.269 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 16:47:42.273 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 16:47:42.624 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 16:47:42.628 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 7174 ms
+[cms] 16:47:42.904 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 16:47:42.949 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@125e6e59
+[cms] 16:47:44.915 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 16:47:45.410 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - order - Starting...
+[cms] 16:47:45.887 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - order - Start completed.
+[cms] 16:47:47.076 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 16:47:47.900 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 16:47:55.944 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 16:47:55.992 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 16:47:56.062 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 21 endpoint(s) beneath base path '/actuator'
+[cms] 16:47:57.103 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 16:47:57.175 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 16:47:57.242 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 16:47:57.349 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 16:47:57.383 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 16:47:57.389 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 16:47:57.655 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:47:57.660 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:47:57.664 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:47:57.669 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:47:57.671 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:47:57.718 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:47:57.721 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 16:47:57.723 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:47:57.759 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:47:57.771 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 16:47:57.781 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 16:47:57.787 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557737277786 with initial instances count: 1
+[cms] 16:47:57.843 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application ORDER-SERVER with eureka with status UP
+[cms] 16:47:57.852 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1557737277852, current=UP, previous=STARTING]
+[cms] 16:47:57.864 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 16:47:57.905 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[460] - Attempting to connect to: [localhost:5672]
+[cms] 16:47:58.025 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 16:47:58.259 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[496] - Created new connection: rabbitConnectionFactory#3fd7ab5b:0/SimpleConnection@5a305f35 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53617]
+[cms] 16:47:58.641 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8086 (http) with context path ''
+[cms] 16:47:58.645 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8086
+[cms] 16:47:58.649 [main] INFO  com.white.orderserver.OrderServerApplication[59] - Started OrderServerApplication in 39.016 seconds (JVM running for 81.176)
+[cms] 16:49:47.810 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 16:49:47.812 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 16:49:47.836 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 23 ms
+[cms] 16:51:03.871 [http-nio-8086-exec-3] INFO  com.white.orderserver.controller.OrdOrderController[55] - 打印新建订单信息OrdOrder{, id=1, orderNo=1557737463709902322.9999170812, productAmount=10, productPrice=null, orderPrice=null, discountPrice=null, payTime=null, deliverTime=null, receive=null, refundTime=null, logisticId=null, logisticNo=null, payChannelType=null, outTradeNo=null, sort=null, enableFlag=null, enableBegin=null, enableEnd=null, createTime=null, createBy=null, lastUpdateTime=null, lastUpdateBy=null, comments=null, version=null, status=null}
+[cms] 16:52:57.735 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:57:38.742 [Thread-7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application ORDER-SERVER with eureka with status DOWN
+[cms] 16:57:38.750 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 16:57:38.772 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 16:57:38.778 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 16:57:39.216 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 16:57:39.224 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 16:57:40.197 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 16:57:40.226 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 16:57:40.229 [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 16:57:40.249 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 16:57:40.305 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 16:57:43.308 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[922] - Unregistering ...
+[cms] 16:57:43.337 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[924] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - deregister  status: 200
+[cms] 16:57:43.406 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 16:57:43.409 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[350] - order - Shutdown initiated...
+[cms] 16:57:43.439 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[352] - order - Shutdown completed.
+[cms] 16:58:31.736 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62c23b59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:58:33.094 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 16:58:33.298 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 16:58:35.018 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 16:58:35.020 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 16:58:35.378 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 16:58:35.381 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 16:58:35.953 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:58:36.744 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:58:36.745 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:58:36.747 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:58:36.748 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:58:36.750 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:58:36.751 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 16:58:36.753 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:58:37.134 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:58:37.140 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 16:58:37.154 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557737917151 with initial instances count: 1
+[cms] 16:58:39.424 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 16:58:42.012 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=948b19de53803557e96fde7854ed2df7181ebcc3, state=null
+[cms] 16:58:42.015 [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration[98] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/order-server-dev.yml'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/application.yml'}]}
+[cms] 16:58:42.205 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 16:58:44.620 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 16:58:44.709 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 76ms. Found 0 repository interfaces.
+[cms] 16:58:45.718 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=e0089606-2fa0-356c-91a7-987fe1340fb0
+[cms] 16:58:46.076 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46a8385c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:58:46.163 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62c23b59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 16:58:47.200 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8086 (http)
+[cms] 16:58:47.305 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 16:58:47.307 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 16:58:47.669 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 16:58:47.672 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 5427 ms
+[cms] 16:58:47.966 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 16:58:48.007 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6cb20e86
+[cms] 16:58:50.007 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 16:58:50.718 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - order - Starting...
+[cms] 16:58:51.293 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - order - Start completed.
+[cms] 16:58:52.824 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 16:58:53.618 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 16:58:58.555 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 16:58:58.575 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 16:58:58.602 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 21 endpoint(s) beneath base path '/actuator'
+[cms] 16:58:59.118 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 16:58:59.130 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 16:58:59.144 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 16:58:59.145 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 16:58:59.148 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 16:58:59.149 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 16:58:59.452 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 16:58:59.458 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 16:58:59.461 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 16:58:59.464 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 16:58:59.509 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 16:58:59.510 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 16:58:59.512 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 16:58:59.514 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 16:58:59.537 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 16:58:59.544 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 16:58:59.562 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 16:58:59.569 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557737939569 with initial instances count: 1
+[cms] 16:58:59.578 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application ORDER-SERVER with eureka with status UP
+[cms] 16:58:59.580 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1557737939580, current=UP, previous=STARTING]
+[cms] 16:58:59.589 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 16:58:59.656 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[460] - Attempting to connect to: [localhost:5672]
+[cms] 16:58:59.895 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 16:59:00.215 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[496] - Created new connection: rabbitConnectionFactory#57678d71:0/SimpleConnection@f788f8e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54385]
+[cms] 16:59:00.501 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8086 (http) with context path ''
+[cms] 16:59:00.505 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8086
+[cms] 16:59:00.510 [main] INFO  com.white.orderserver.OrderServerApplication[59] - Started OrderServerApplication in 33.425 seconds (JVM running for 73.481)
+[cms] 16:59:22.375 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 16:59:22.378 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 16:59:22.406 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 27 ms
+[cms] 16:59:23.149 [http-nio-8086-exec-1] INFO  com.white.orderserver.controller.OrdOrderController[55] - 打印新建订单信息OrdOrder(id=2, orderNo=1557737962635500000, productAmount=10, productPrice=null, orderPrice=null, discountPrice=null, payTime=null, deliverTime=null, receive=null, refundTime=null, logisticId=null, logisticNo=null, payChannelType=null, outTradeNo=null, sort=null, enableFlag=null, enableBegin=null, enableEnd=null, createTime=null, createBy=null, lastUpdateTime=null, lastUpdateBy=null, comments=null, version=null, status=null)
+[cms] 17:02:08.736 [http-nio-8086-exec-3] INFO  com.white.orderserver.controller.OrdOrderController[55] - 打印新建订单信息OrdOrder(id=3, orderNo=1557738128594800000, productAmount=10, productPrice=null, orderPrice=null, discountPrice=null, payTime=null, deliverTime=null, receive=null, refundTime=null, logisticId=null, logisticNo=null, payChannelType=null, outTradeNo=null, sort=null, enableFlag=null, enableBegin=null, enableEnd=null, createTime=null, createBy=null, lastUpdateTime=null, lastUpdateBy=null, comments=null, version=null, status=null)
+[cms] 17:03:27.746 [Thread-7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application ORDER-SERVER with eureka with status DOWN
+[cms] 17:03:27.754 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 17:03:27.768 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 17:03:27.775 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 17:03:28.736 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 17:03:28.743 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 17:03:29.731 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 17:03:29.751 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 17:03:29.753 [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 17:03:29.760 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 17:03:29.799 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 17:03:32.804 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[922] - Unregistering ...
+[cms] 17:03:32.823 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[924] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - deregister  status: 200
+[cms] 17:03:32.864 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 17:03:32.917 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[350] - order - Shutdown initiated...
+[cms] 17:03:33.022 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[352] - order - Shutdown completed.
+[cms] 17:08:40.901 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee116577] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 17:08:42.370 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 17:08:42.572 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 17:08:44.530 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 17:08:44.533 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 17:08:44.899 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 17:08:44.905 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 17:08:45.807 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 17:08:46.926 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 17:08:46.928 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 17:08:46.931 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 17:08:46.933 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 17:08:46.935 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 17:08:46.937 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 17:08:46.938 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 17:08:47.498 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 17:08:47.509 [main] INFO  com.netflix.discovery.DiscoveryClient[1317] - Not registering with Eureka server per configuration
+[cms] 17:08:47.522 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557738527519 with initial instances count: 1
+[cms] 17:08:49.839 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[205] - Fetching config from server at : http://192.168.1.104:8082/
+[cms] 17:08:52.055 [main] INFO  org.springframework.cloud.config.client.ConfigServicePropertySourceLocator[149] - Located environment: name=order-server, profiles=[dev], label=null, version=948b19de53803557e96fde7854ed2df7181ebcc3, state=null
+[cms] 17:08:52.062 [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration[98] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/order-server-dev.yml'}, MapPropertySource {name='https://github.com/white211/SpringcloudConfig//order-server/application.yml'}]}
+[cms] 17:08:52.328 [main] INFO  com.white.orderserver.OrderServerApplication[679] - The following profiles are active: dev
+[cms] 17:08:54.535 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[cms] 17:08:54.612 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate[182] - Finished Spring Data repository scanning in 64ms. Found 0 repository interfaces.
+[cms] 17:08:55.529 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=e0089606-2fa0-356c-91a7-987fe1340fb0
+[cms] 17:08:55.840 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1f7627a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 17:08:55.921 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee116577] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 17:08:57.024 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8086 (http)
+[cms] 17:08:57.156 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 17:08:57.169 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 17:08:57.546 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 17:08:57.548 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 5191 ms
+[cms] 17:08:57.895 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 17:08:57.930 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@60eb1a2d
+[cms] 17:08:59.785 [main] INFO  org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar[78] - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+[cms] 17:09:00.370 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - order - Starting...
+[cms] 17:09:00.829 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - order - Start completed.
+[cms] 17:09:02.244 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 17:09:02.809 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 17:09:10.786 [main] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 17:09:10.917 [main] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 17:09:11.115 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 21 endpoint(s) beneath base path '/actuator'
+[cms] 17:09:12.190 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 17:09:12.235 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 17:09:12.445 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 17:09:12.474 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 17:09:12.565 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 17:09:12.572 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 17:09:12.835 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[43] - Resolving eureka endpoints via configuration
+[cms] 17:09:12.840 [main] INFO  com.netflix.discovery.DiscoveryClient[958] - Disable delta property : false
+[cms] 17:09:12.844 [main] INFO  com.netflix.discovery.DiscoveryClient[959] - Single vip registry refresh property : null
+[cms] 17:09:12.847 [main] INFO  com.netflix.discovery.DiscoveryClient[960] - Force full registry fetch : false
+[cms] 17:09:12.849 [main] INFO  com.netflix.discovery.DiscoveryClient[961] - Application is null : false
+[cms] 17:09:12.893 [main] INFO  com.netflix.discovery.DiscoveryClient[962] - Registered Applications size is zero : true
+[cms] 17:09:12.897 [main] INFO  com.netflix.discovery.DiscoveryClient[964] - Application version is -1: true
+[cms] 17:09:12.908 [main] INFO  com.netflix.discovery.DiscoveryClient[1047] - Getting all instance registry info from the eureka server
+[cms] 17:09:12.943 [main] INFO  com.netflix.discovery.DiscoveryClient[1056] - The response status is 200
+[cms] 17:09:12.948 [main] INFO  com.netflix.discovery.DiscoveryClient[1270] - Starting heartbeat executor: renew interval is: 30
+[cms] 17:09:12.964 [main] INFO  com.netflix.discovery.InstanceInfoReplicator[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[cms] 17:09:12.979 [main] INFO  com.netflix.discovery.DiscoveryClient[449] - Discovery Client initialized at timestamp 1557738552979 with initial instances count: 1
+[cms] 17:09:12.987 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application ORDER-SERVER with eureka with status UP
+[cms] 17:09:12.992 [main] INFO  com.netflix.discovery.DiscoveryClient[1305] - Saw local status change event StatusChangeEvent [timestamp=1557738552992, current=UP, previous=STARTING]
+[cms] 17:09:13.024 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 17:09:13.023 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[460] - Attempting to connect to: [localhost:5672]
+[cms] 17:09:13.320 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 17:09:13.579 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory[496] - Created new connection: rabbitConnectionFactory#1f813660:0/SimpleConnection@3787621f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55129]
+[cms] 17:09:13.825 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8086 (http) with context path ''
+[cms] 17:09:13.830 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8086
+[cms] 17:09:13.836 [main] INFO  com.white.orderserver.OrderServerApplication[59] - Started OrderServerApplication in 38.308 seconds (JVM running for 90.276)
+[cms] 17:09:25.890 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 17:09:25.892 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 17:09:25.918 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 25 ms
+[cms] 17:09:26.582 [http-nio-8086-exec-1] INFO  com.white.orderserver.controller.OrdOrderController[55] - 打印新建订单信息OrdOrder(id=4, orderNo=1557738566185521134, productAmount=10, productPrice=null, orderPrice=null, discountPrice=null, payTime=null, deliverTime=null, receive=null, refundTime=null, logisticId=null, logisticNo=null, payChannelType=null, outTradeNo=null, sort=null, enableFlag=null, enableBegin=null, enableEnd=null, createTime=null, createBy=null, lastUpdateTime=null, lastUpdateBy=null, comments=null, version=null, status=null)
+[cms] 17:09:26.785 [simpleMessageListenerContainer_one-1] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 17:09:26.789 [simpleMessageListenerContainer_one-1] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 17:11:00.840 [Thread-7] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application ORDER-SERVER with eureka with status DOWN
+[cms] 17:11:00.844 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[826] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086: registering service...
+[cms] 17:11:00.854 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[586] - Waiting for workers to finish.
+[cms] 17:11:00.874 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient[835] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - registration status: 204
+[cms] 17:11:00.887 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[589] - Successfully waited for workers to finish.
+[cms] 17:11:00.904 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 17:11:00.905 [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 17:11:00.910 [Thread-7] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer[1226] - Shutdown ignored - container is not active already
+[cms] 17:11:00.959 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 17:11:03.965 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[922] - Unregistering ...
+[cms] 17:11:03.979 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[924] - DiscoveryClient_ORDER-SERVER/DESKTOP-DIC4SEB:order-server:8086 - deregister  status: 200
+[cms] 17:11:03.997 [Thread-7] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 17:11:04.008 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[350] - order - Shutdown initiated...
+[cms] 17:11:04.047 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource[352] - order - Shutdown completed.

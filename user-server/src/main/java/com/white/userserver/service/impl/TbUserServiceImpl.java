@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.white.userserver.common.Constants;
 import com.white.userserver.common.Result;
 import com.white.userserver.helper.JedisHelper;
 import com.white.userserver.pojo.entity.TbResource;
@@ -57,12 +58,12 @@ public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser> impleme
         if(tbUser == null){
             return Result.requestByError("username or password can not be null");
         }
-        String token = JwtUtil.sign(tbUser.getUsername(),tbUser.getPassword());
+        String token = JwtUtil.sign(tbUser.getUsername(),tbUser.getPassword(),String.valueOf(tbUser.getId()));
 
         //将获取到的token存放到redis中
         String userJson = JSON.toJSONString(tbUser);
         jedisHelper.STRINGS.set(token,userJson);
-        jedisHelper.expire(token,30*60);
+        jedisHelper.expire(token, (int)Constants.EXPIRE_TIME);
 
         //将获取到的觉得存放到redis中
         Integer userId = tbUser.getId();
@@ -73,7 +74,7 @@ public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser> impleme
         Wrapper<TbRole> wrapper1 = new EntityWrapper<>();
         wrapper1.in("id",roleId.toString());
         TbRole tbRole = tbRoleService.selectOne(wrapper1);
-        String key1 = "role_"+tbUser.getUsername();
+        String key1 = "role_"+tbUser.getId();
         if(tbRole != null){
             jedisHelper.KEYS.del(key1);
             jedisHelper.SETS.sadd(key1,tbRole.getName());
@@ -82,7 +83,7 @@ public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser> impleme
         //将获取到资源放到redis中
         List<TbResource> list = this.baseMapper.getResource(tbUser);
 
-        String key = "permission_"+tbUser.getUsername();
+        String key = "permission_"+tbUser.getId();
         if(list != null &&list.size()>0){
             //保存之前 先将上次保留的数据进行清除
             jedisHelper.KEYS.del(key);
