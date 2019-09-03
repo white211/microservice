@@ -1,15 +1,15 @@
 package com.white.orderserver.util.mp;
 
-import com.baomidou.mybatisplus.enums.FieldFill;
-import com.baomidou.mybatisplus.exceptions.MybatisPlusException;
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
-import com.baomidou.mybatisplus.generator.config.rules.DbType;
+import com.baomidou.mybatisplus.generator.config.rules.IColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.apache.commons.lang3.StringUtils;
 
@@ -25,12 +25,12 @@ import java.util.*;
 
 public class CodeGenerator {
 
-    private static String packageName="orderserver";    //文件路径
+    private static String packageName="userserver";    //文件路径
     private static String authorName="White";     //作者
     private static String table="tb_user";                  //table名字
     //    private static String prefix="sc_";                     //table前缀
     private static File file = new File("");
-    private static String path = file.getAbsolutePath()+"/order-server/";
+    private static String path = file.getAbsolutePath()+"/user-server/";
 
     /**
      * <p>
@@ -82,13 +82,13 @@ public class CodeGenerator {
                         .setDbType(DbType.MYSQL)// 数据库类型
                         .setTypeConvert(new MySqlTypeConvert() {
                             // 自定义数据库表字段类型转换【可选】
-                            @Override
-                            public DbColumnType processTypeConvert(String fieldType) {
+                            public IColumnType processTypeConvert(String fieldType) {
+                                GlobalConfig globalconfig = new GlobalConfig();
                                 System.out.println("转换类型：" + fieldType);
                                 // if ( fieldType.toLowerCase().contains( "tinyint" ) ) {
                                 //    return DbColumnType.BOOLEAN;
                                 // }
-                                return super.processTypeConvert(fieldType);
+                                return super.processTypeConvert(globalconfig,fieldType);
                             }
                         })
                         .setDriverName("com.mysql.cj.jdbc.Driver")

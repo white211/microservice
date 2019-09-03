@@ -1,11 +1,9 @@
 package com.white.userserver.pojo.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import java.util.Date;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
-import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 
 /**
@@ -14,75 +12,78 @@ import java.io.Serializable;
  * </p>
  *
  * @author White
- * @since 2019-04-28
+ * @since 2019-09-03
  */
-@TableName("tb_role_resource")
 public class TbRoleResource extends Model<TbRoleResource> {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID=1L;
 
     /**
      * id
      */
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
+
     /**
      * 角色ID
      */
-    @TableField("role_id")
     private Integer roleId;
+
     /**
      * 菜单ID
      */
-    @TableField("resource_id")
     private Integer resourceId;
+
     /**
      * 排序
      */
     private Integer sort;
+
     /**
      * 可用状态
      */
-    @TableField("enable_flag")
     private Integer enableFlag;
+
     /**
      * 可用开始
      */
-    @TableField("enable_begin")
-    private Date enableBegin;
+    private LocalDateTime enableBegin;
+
     /**
      * 可用结束
      */
-    @TableField("enable_end")
-    private Date enableEnd;
+    private LocalDateTime enableEnd;
+
     /**
      * 创建时间
      */
-    @TableField("create_time")
-    private Date createTime;
+    private LocalDateTime createTime;
+
     /**
      * 创建人
      */
-    @TableField("create_by")
     private Integer createBy;
+
     /**
      * 最后更新时间
      */
-    @TableField("last_update_time")
-    private Date lastUpdateTime;
+    private LocalDateTime lastUpdateTime;
+
     /**
      * 最后更新人
      */
-    @TableField("last_update_by")
     private Integer lastUpdateBy;
+
     /**
      * 备注
      */
     private String comments;
+
     /**
      * 版本号
      */
     private Integer version;
+
     /**
      * status
      */
@@ -129,27 +130,27 @@ public class TbRoleResource extends Model<TbRoleResource> {
         this.enableFlag = enableFlag;
     }
 
-    public Date getEnableBegin() {
+    public LocalDateTime getEnableBegin() {
         return enableBegin;
     }
 
-    public void setEnableBegin(Date enableBegin) {
+    public void setEnableBegin(LocalDateTime enableBegin) {
         this.enableBegin = enableBegin;
     }
 
-    public Date getEnableEnd() {
+    public LocalDateTime getEnableEnd() {
         return enableEnd;
     }
 
-    public void setEnableEnd(Date enableEnd) {
+    public void setEnableEnd(LocalDateTime enableEnd) {
         this.enableEnd = enableEnd;
     }
 
-    public Date getCreateTime() {
+    public LocalDateTime getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
 
@@ -161,11 +162,11 @@ public class TbRoleResource extends Model<TbRoleResource> {
         this.createBy = createBy;
     }
 
-    public Date getLastUpdateTime() {
+    public LocalDateTime getLastUpdateTime() {
         return lastUpdateTime;
     }
 
-    public void setLastUpdateTime(Date lastUpdateTime) {
+    public void setLastUpdateTime(LocalDateTime lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
 
@@ -209,7 +210,7 @@ public class TbRoleResource extends Model<TbRoleResource> {
     @Override
     public String toString() {
         return "TbRoleResource{" +
-        ", id=" + id +
+        "id=" + id +
         ", roleId=" + roleId +
         ", resourceId=" + resourceId +
         ", sort=" + sort +

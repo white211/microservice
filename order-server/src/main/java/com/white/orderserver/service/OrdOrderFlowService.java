@@ -1,7 +1,7 @@
 package com.white.orderserver.service;
 
 import com.white.orderserver.pojo.entity.OrdOrderFlow;
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>

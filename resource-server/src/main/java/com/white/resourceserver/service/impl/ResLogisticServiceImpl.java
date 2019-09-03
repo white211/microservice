@@ -3,7 +3,7 @@ package com.white.resourceserver.service.impl;
 import com.white.resourceserver.pojo.entity.ResLogistic;
 import com.white.resourceserver.mapper.ResLogisticMapper;
 import com.white.resourceserver.service.ResLogisticService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

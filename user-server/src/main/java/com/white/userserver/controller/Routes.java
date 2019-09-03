@@ -21,4 +21,6 @@ public class Routes {
     @Desc("资源列表")
     public static final String TB_RESOURCE_PAGE = "/resource/page";
 
+    @Desc("生成报表")
+    public static final String TB_USER_LIST_DOWNLOAD = "/user/list/download";
 }

@@ -1,8 +1,7 @@
 package com.white.userserver.service;
 
-import com.white.userserver.common.Result;
 import com.white.userserver.pojo.entity.TbUser;
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -14,7 +13,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface TbUserService extends IService<TbUser> {
 
-    Result login(TbUser tbUser);
-
-    Result getUserPage();
+    String execute(String value,String exFlag);
 }

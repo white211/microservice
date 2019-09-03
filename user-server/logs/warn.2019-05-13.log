@@ -1,5 +1,0 @@
-[cms] 12:11:48.538 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner[166] - No MyBatis mapper was found in '[com.white.userserver.mapper.*]' package. Please check your configuration.
-[cms] 12:11:53.929 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-[cms] 12:12:10.320 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
-[cms] 12:12:38.123 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
-[cms] 12:13:31.417 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1557720811417, current=DOWN, previous=UP]

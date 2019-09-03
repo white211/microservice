@@ -1,7 +1,7 @@
 package com.white.userserver.service;
 
 import com.white.userserver.pojo.entity.TbUserRole;
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author White
- * @since 2019-04-28
+ * @since 2019-09-03
  */
 public interface TbUserRoleService extends IService<TbUserRole> {
 

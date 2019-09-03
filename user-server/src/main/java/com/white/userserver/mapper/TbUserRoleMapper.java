@@ -1,7 +1,7 @@
 package com.white.userserver.mapper;
 
 import com.white.userserver.pojo.entity.TbUserRole;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author White
- * @since 2019-04-28
+ * @since 2019-09-03
  */
 public interface TbUserRoleMapper extends BaseMapper<TbUserRole> {
 

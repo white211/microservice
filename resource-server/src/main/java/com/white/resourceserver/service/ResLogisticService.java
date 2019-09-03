@@ -1,7 +1,7 @@
 package com.white.resourceserver.service;
 
 import com.white.resourceserver.pojo.entity.ResLogistic;
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>

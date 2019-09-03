@@ -1,7 +1,7 @@
 package com.white.orderserver.mapper;
 
 import com.white.orderserver.pojo.entity.OrdOrder;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>

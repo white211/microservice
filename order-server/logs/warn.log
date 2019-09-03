@@ -1,3 +1,0 @@
-[cms] 01:06:40.605 [Thread-7] WARN  com.netflix.discovery.DiscoveryClient[1303] - Saw local status change event StatusChangeEvent [timestamp=1559668000604, current=DOWN, previous=UP]
-[cms] 01:06:45.648 [Thread-7] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-[cms] 01:06:46.678 [Thread-7] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[130] - Request execution failed with message: java.net.ConnectException: Connection refused: connect

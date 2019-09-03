@@ -3,7 +3,7 @@ package com.white.orderserver.service.impl;
 import com.white.orderserver.pojo.entity.OrdOrderFlow;
 import com.white.orderserver.mapper.OrdOrderFlowMapper;
 import com.white.orderserver.service.OrdOrderFlowService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

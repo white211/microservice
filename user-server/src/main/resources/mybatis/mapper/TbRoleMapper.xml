@@ -24,7 +24,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, pid, leaf, name, icon, sort, enable_flag AS enableFlag, enable_begin AS enableBegin, enable_end AS enableEnd, create_time AS createTime, create_by AS createBy, last_update_time AS lastUpdateTime, last_update_by AS lastUpdateBy, comments, version, status
+        id, pid, leaf, name, icon, sort, enable_flag, enable_begin, enable_end, create_time, create_by, last_update_time, last_update_by, comments, version, status
     </sql>
 
 </mapper>

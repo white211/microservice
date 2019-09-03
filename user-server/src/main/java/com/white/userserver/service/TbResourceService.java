@@ -1,10 +1,7 @@
 package com.white.userserver.service;
 
-import com.white.userserver.common.Result;
 import com.white.userserver.pojo.entity.TbResource;
-import com.baomidou.mybatisplus.service.IService;
-
-import java.util.List;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -12,10 +9,8 @@ import java.util.List;
  * </p>
  *
  * @author White
- * @since 2019-04-28
+ * @since 2019-09-03
  */
 public interface TbResourceService extends IService<TbResource> {
-
-    Result getResourcePage();
 
 }

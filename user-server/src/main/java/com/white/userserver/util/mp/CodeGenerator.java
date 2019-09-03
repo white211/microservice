@@ -1,7 +1,7 @@
 package com.white.userserver.util.mp;
 
-import com.baomidou.mybatisplus.enums.FieldFill;
-import com.baomidou.mybatisplus.exceptions.MybatisPlusException;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
@@ -9,7 +9,8 @@ import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
-import com.baomidou.mybatisplus.generator.config.rules.DbType;
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.generator.config.rules.IColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.apache.commons.lang3.StringUtils;
 
@@ -82,13 +83,13 @@ public class CodeGenerator {
                         .setDbType(DbType.MYSQL)// 数据库类型
                         .setTypeConvert(new MySqlTypeConvert() {
                             // 自定义数据库表字段类型转换【可选】
-                            @Override
-                            public DbColumnType processTypeConvert(String fieldType) {
+                            public IColumnType processTypeConvert(String fieldType) {
+                                GlobalConfig globalconfig = new GlobalConfig();
                                 System.out.println("转换类型：" + fieldType);
                                 // if ( fieldType.toLowerCase().contains( "tinyint" ) ) {
                                 //    return DbColumnType.BOOLEAN;
                                 // }
-                                return super.processTypeConvert(fieldType);
+                                return super.processTypeConvert(globalconfig,fieldType);
                             }
                         })
                         .setDriverName("com.mysql.cj.jdbc.Driver")

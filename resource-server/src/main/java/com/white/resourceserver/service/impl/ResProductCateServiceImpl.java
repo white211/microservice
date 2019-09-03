@@ -3,7 +3,7 @@ package com.white.resourceserver.service.impl;
 import com.white.resourceserver.pojo.entity.ResProductCate;
 import com.white.resourceserver.mapper.ResProductCateMapper;
 import com.white.resourceserver.service.ResProductCateService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

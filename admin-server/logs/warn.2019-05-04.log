@@ -1,7 +1,0 @@
-[cms] 11:56:54.430 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-[cms] 11:57:02.315 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
-[cms] 11:57:14.943 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
-[cms] 11:57:22.507 [main] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration[108] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-[cms] 11:57:42.235 [main] WARN  com.netflix.discovery.InstanceInfoReplicator[110] - Ignoring onDemand update due to rate limiter
-[cms] 13:09:49.709 [reactor-http-nio-2] WARN  reactor.netty.http.client.HttpClientConnect[299] - [id: 0x7ed0415e, L:/192.168.1.100:49331 - R:/192.168.1.100:8082] The connection observed an error
-io.netty.handler.timeout.ReadTimeoutException: null
