@@ -12,11 +12,11 @@ import java.io.Serializable;
  * </p>
  *
  * @author White
- * @since 2019-09-03
+ * @since 2019-09-04
  */
 public class TbUserRole extends Model<TbUserRole> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * id
@@ -89,7 +89,6 @@ public class TbUserRole extends Model<TbUserRole> {
      */
     private Integer status;
 
-
     public Integer getId() {
         return id;
     }
@@ -97,7 +96,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public Integer getUserId() {
         return userId;
     }
@@ -105,7 +103,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setUserId(Integer userId) {
         this.userId = userId;
     }
-
     public Integer getRoleId() {
         return roleId;
     }
@@ -113,7 +110,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setRoleId(Integer roleId) {
         this.roleId = roleId;
     }
-
     public Integer getSort() {
         return sort;
     }
@@ -121,7 +117,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setSort(Integer sort) {
         this.sort = sort;
     }
-
     public Integer getEnableFlag() {
         return enableFlag;
     }
@@ -129,7 +124,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setEnableFlag(Integer enableFlag) {
         this.enableFlag = enableFlag;
     }
-
     public LocalDateTime getEnableBegin() {
         return enableBegin;
     }
@@ -137,7 +131,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setEnableBegin(LocalDateTime enableBegin) {
         this.enableBegin = enableBegin;
     }
-
     public LocalDateTime getEnableEnd() {
         return enableEnd;
     }
@@ -145,7 +138,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setEnableEnd(LocalDateTime enableEnd) {
         this.enableEnd = enableEnd;
     }
-
     public LocalDateTime getCreateTime() {
         return createTime;
     }
@@ -153,7 +145,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
-
     public Integer getCreateBy() {
         return createBy;
     }
@@ -161,7 +152,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setCreateBy(Integer createBy) {
         this.createBy = createBy;
     }
-
     public LocalDateTime getLastUpdateTime() {
         return lastUpdateTime;
     }
@@ -169,7 +159,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setLastUpdateTime(LocalDateTime lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
-
     public Integer getLastUpdateBy() {
         return lastUpdateBy;
     }
@@ -177,7 +166,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setLastUpdateBy(Integer lastUpdateBy) {
         this.lastUpdateBy = lastUpdateBy;
     }
-
     public String getComments() {
         return comments;
     }
@@ -185,7 +173,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
     public Integer getVersion() {
         return version;
     }
@@ -193,7 +180,6 @@ public class TbUserRole extends Model<TbUserRole> {
     public void setVersion(Integer version) {
         this.version = version;
     }
-
     public Integer getStatus() {
         return status;
     }
@@ -210,20 +196,20 @@ public class TbUserRole extends Model<TbUserRole> {
     @Override
     public String toString() {
         return "TbUserRole{" +
-        "id=" + id +
-        ", userId=" + userId +
-        ", roleId=" + roleId +
-        ", sort=" + sort +
-        ", enableFlag=" + enableFlag +
-        ", enableBegin=" + enableBegin +
-        ", enableEnd=" + enableEnd +
-        ", createTime=" + createTime +
-        ", createBy=" + createBy +
-        ", lastUpdateTime=" + lastUpdateTime +
-        ", lastUpdateBy=" + lastUpdateBy +
-        ", comments=" + comments +
-        ", version=" + version +
-        ", status=" + status +
+            "id=" + id +
+            ", userId=" + userId +
+            ", roleId=" + roleId +
+            ", sort=" + sort +
+            ", enableFlag=" + enableFlag +
+            ", enableBegin=" + enableBegin +
+            ", enableEnd=" + enableEnd +
+            ", createTime=" + createTime +
+            ", createBy=" + createBy +
+            ", lastUpdateTime=" + lastUpdateTime +
+            ", lastUpdateBy=" + lastUpdateBy +
+            ", comments=" + comments +
+            ", version=" + version +
+            ", status=" + status +
         "}";
     }
 }

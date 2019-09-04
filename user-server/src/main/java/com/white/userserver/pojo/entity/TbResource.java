@@ -12,11 +12,11 @@ import java.io.Serializable;
  * </p>
  *
  * @author White
- * @since 2019-09-03
+ * @since 2019-09-04
  */
 public class TbResource extends Model<TbResource> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * id
@@ -124,7 +124,6 @@ public class TbResource extends Model<TbResource> {
      */
     private Integer status;
 
-
     public Integer getId() {
         return id;
     }
@@ -132,7 +131,6 @@ public class TbResource extends Model<TbResource> {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public Integer getPid() {
         return pid;
     }
@@ -140,7 +138,6 @@ public class TbResource extends Model<TbResource> {
     public void setPid(Integer pid) {
         this.pid = pid;
     }
-
     public Integer getLeaf() {
         return leaf;
     }
@@ -148,7 +145,6 @@ public class TbResource extends Model<TbResource> {
     public void setLeaf(Integer leaf) {
         this.leaf = leaf;
     }
-
     public Integer getTypeId() {
         return typeId;
     }
@@ -156,7 +152,6 @@ public class TbResource extends Model<TbResource> {
     public void setTypeId(Integer typeId) {
         this.typeId = typeId;
     }
-
     public String getPath() {
         return path;
     }
@@ -164,7 +159,6 @@ public class TbResource extends Model<TbResource> {
     public void setPath(String path) {
         this.path = path;
     }
-
     public String getComponent() {
         return component;
     }
@@ -172,7 +166,6 @@ public class TbResource extends Model<TbResource> {
     public void setComponent(String component) {
         this.component = component;
     }
-
     public String getName() {
         return name;
     }
@@ -180,7 +173,6 @@ public class TbResource extends Model<TbResource> {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getRedirect() {
         return redirect;
     }
@@ -188,7 +180,6 @@ public class TbResource extends Model<TbResource> {
     public void setRedirect(String redirect) {
         this.redirect = redirect;
     }
-
     public Integer getHidden() {
         return hidden;
     }
@@ -196,7 +187,6 @@ public class TbResource extends Model<TbResource> {
     public void setHidden(Integer hidden) {
         this.hidden = hidden;
     }
-
     public String getIcon() {
         return icon;
     }
@@ -204,7 +194,6 @@ public class TbResource extends Model<TbResource> {
     public void setIcon(String icon) {
         this.icon = icon;
     }
-
     public Integer getSort() {
         return sort;
     }
@@ -212,7 +201,6 @@ public class TbResource extends Model<TbResource> {
     public void setSort(Integer sort) {
         this.sort = sort;
     }
-
     public Integer getEnableFlag() {
         return enableFlag;
     }
@@ -220,7 +208,6 @@ public class TbResource extends Model<TbResource> {
     public void setEnableFlag(Integer enableFlag) {
         this.enableFlag = enableFlag;
     }
-
     public LocalDateTime getEnableBegin() {
         return enableBegin;
     }
@@ -228,7 +215,6 @@ public class TbResource extends Model<TbResource> {
     public void setEnableBegin(LocalDateTime enableBegin) {
         this.enableBegin = enableBegin;
     }
-
     public LocalDateTime getEnableEnd() {
         return enableEnd;
     }
@@ -236,7 +222,6 @@ public class TbResource extends Model<TbResource> {
     public void setEnableEnd(LocalDateTime enableEnd) {
         this.enableEnd = enableEnd;
     }
-
     public LocalDateTime getCreateTime() {
         return createTime;
     }
@@ -244,7 +229,6 @@ public class TbResource extends Model<TbResource> {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
-
     public Integer getCreateBy() {
         return createBy;
     }
@@ -252,7 +236,6 @@ public class TbResource extends Model<TbResource> {
     public void setCreateBy(Integer createBy) {
         this.createBy = createBy;
     }
-
     public LocalDateTime getLastUpdateTime() {
         return lastUpdateTime;
     }
@@ -260,7 +243,6 @@ public class TbResource extends Model<TbResource> {
     public void setLastUpdateTime(LocalDateTime lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
-
     public Integer getLastUpdateBy() {
         return lastUpdateBy;
     }
@@ -268,7 +250,6 @@ public class TbResource extends Model<TbResource> {
     public void setLastUpdateBy(Integer lastUpdateBy) {
         this.lastUpdateBy = lastUpdateBy;
     }
-
     public String getComments() {
         return comments;
     }
@@ -276,7 +257,6 @@ public class TbResource extends Model<TbResource> {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
     public Integer getVersion() {
         return version;
     }
@@ -284,7 +264,6 @@ public class TbResource extends Model<TbResource> {
     public void setVersion(Integer version) {
         this.version = version;
     }
-
     public Integer getStatus() {
         return status;
     }
@@ -301,27 +280,27 @@ public class TbResource extends Model<TbResource> {
     @Override
     public String toString() {
         return "TbResource{" +
-        "id=" + id +
-        ", pid=" + pid +
-        ", leaf=" + leaf +
-        ", typeId=" + typeId +
-        ", path=" + path +
-        ", component=" + component +
-        ", name=" + name +
-        ", redirect=" + redirect +
-        ", hidden=" + hidden +
-        ", icon=" + icon +
-        ", sort=" + sort +
-        ", enableFlag=" + enableFlag +
-        ", enableBegin=" + enableBegin +
-        ", enableEnd=" + enableEnd +
-        ", createTime=" + createTime +
-        ", createBy=" + createBy +
-        ", lastUpdateTime=" + lastUpdateTime +
-        ", lastUpdateBy=" + lastUpdateBy +
-        ", comments=" + comments +
-        ", version=" + version +
-        ", status=" + status +
+            "id=" + id +
+            ", pid=" + pid +
+            ", leaf=" + leaf +
+            ", typeId=" + typeId +
+            ", path=" + path +
+            ", component=" + component +
+            ", name=" + name +
+            ", redirect=" + redirect +
+            ", hidden=" + hidden +
+            ", icon=" + icon +
+            ", sort=" + sort +
+            ", enableFlag=" + enableFlag +
+            ", enableBegin=" + enableBegin +
+            ", enableEnd=" + enableEnd +
+            ", createTime=" + createTime +
+            ", createBy=" + createBy +
+            ", lastUpdateTime=" + lastUpdateTime +
+            ", lastUpdateBy=" + lastUpdateBy +
+            ", comments=" + comments +
+            ", version=" + version +
+            ", status=" + status +
         "}";
     }
 }

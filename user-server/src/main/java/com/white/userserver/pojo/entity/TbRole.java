@@ -16,7 +16,7 @@ import java.io.Serializable;
  */
 public class TbRole extends Model<TbRole> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * id
@@ -99,7 +99,6 @@ public class TbRole extends Model<TbRole> {
      */
     private Integer status;
 
-
     public Integer getId() {
         return id;
     }
@@ -107,7 +106,6 @@ public class TbRole extends Model<TbRole> {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public Integer getPid() {
         return pid;
     }
@@ -115,7 +113,6 @@ public class TbRole extends Model<TbRole> {
     public void setPid(Integer pid) {
         this.pid = pid;
     }
-
     public Integer getLeaf() {
         return leaf;
     }
@@ -123,7 +120,6 @@ public class TbRole extends Model<TbRole> {
     public void setLeaf(Integer leaf) {
         this.leaf = leaf;
     }
-
     public String getName() {
         return name;
     }
@@ -131,7 +127,6 @@ public class TbRole extends Model<TbRole> {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getIcon() {
         return icon;
     }
@@ -139,7 +134,6 @@ public class TbRole extends Model<TbRole> {
     public void setIcon(String icon) {
         this.icon = icon;
     }
-
     public Integer getSort() {
         return sort;
     }
@@ -147,7 +141,6 @@ public class TbRole extends Model<TbRole> {
     public void setSort(Integer sort) {
         this.sort = sort;
     }
-
     public Integer getEnableFlag() {
         return enableFlag;
     }
@@ -155,7 +148,6 @@ public class TbRole extends Model<TbRole> {
     public void setEnableFlag(Integer enableFlag) {
         this.enableFlag = enableFlag;
     }
-
     public LocalDateTime getEnableBegin() {
         return enableBegin;
     }
@@ -163,7 +155,6 @@ public class TbRole extends Model<TbRole> {
     public void setEnableBegin(LocalDateTime enableBegin) {
         this.enableBegin = enableBegin;
     }
-
     public LocalDateTime getEnableEnd() {
         return enableEnd;
     }
@@ -171,7 +162,6 @@ public class TbRole extends Model<TbRole> {
     public void setEnableEnd(LocalDateTime enableEnd) {
         this.enableEnd = enableEnd;
     }
-
     public LocalDateTime getCreateTime() {
         return createTime;
     }
@@ -179,7 +169,6 @@ public class TbRole extends Model<TbRole> {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
-
     public Integer getCreateBy() {
         return createBy;
     }
@@ -187,7 +176,6 @@ public class TbRole extends Model<TbRole> {
     public void setCreateBy(Integer createBy) {
         this.createBy = createBy;
     }
-
     public LocalDateTime getLastUpdateTime() {
         return lastUpdateTime;
     }
@@ -195,7 +183,6 @@ public class TbRole extends Model<TbRole> {
     public void setLastUpdateTime(LocalDateTime lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
-
     public Integer getLastUpdateBy() {
         return lastUpdateBy;
     }
@@ -203,7 +190,6 @@ public class TbRole extends Model<TbRole> {
     public void setLastUpdateBy(Integer lastUpdateBy) {
         this.lastUpdateBy = lastUpdateBy;
     }
-
     public String getComments() {
         return comments;
     }
@@ -211,7 +197,6 @@ public class TbRole extends Model<TbRole> {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
     public Integer getVersion() {
         return version;
     }
@@ -219,7 +204,6 @@ public class TbRole extends Model<TbRole> {
     public void setVersion(Integer version) {
         this.version = version;
     }
-
     public Integer getStatus() {
         return status;
     }
@@ -236,22 +220,22 @@ public class TbRole extends Model<TbRole> {
     @Override
     public String toString() {
         return "TbRole{" +
-        "id=" + id +
-        ", pid=" + pid +
-        ", leaf=" + leaf +
-        ", name=" + name +
-        ", icon=" + icon +
-        ", sort=" + sort +
-        ", enableFlag=" + enableFlag +
-        ", enableBegin=" + enableBegin +
-        ", enableEnd=" + enableEnd +
-        ", createTime=" + createTime +
-        ", createBy=" + createBy +
-        ", lastUpdateTime=" + lastUpdateTime +
-        ", lastUpdateBy=" + lastUpdateBy +
-        ", comments=" + comments +
-        ", version=" + version +
-        ", status=" + status +
+            "id=" + id +
+            ", pid=" + pid +
+            ", leaf=" + leaf +
+            ", name=" + name +
+            ", icon=" + icon +
+            ", sort=" + sort +
+            ", enableFlag=" + enableFlag +
+            ", enableBegin=" + enableBegin +
+            ", enableEnd=" + enableEnd +
+            ", createTime=" + createTime +
+            ", createBy=" + createBy +
+            ", lastUpdateTime=" + lastUpdateTime +
+            ", lastUpdateBy=" + lastUpdateBy +
+            ", comments=" + comments +
+            ", version=" + version +
+            ", status=" + status +
         "}";
     }
 }

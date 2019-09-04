@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author White
- * @since 2019-09-03
+ * @since 2019-09-04
  */
 @Service
 public class TbRoleResourceServiceImpl extends ServiceImpl<TbRoleResourceMapper, TbRoleResource> implements TbRoleResourceService {

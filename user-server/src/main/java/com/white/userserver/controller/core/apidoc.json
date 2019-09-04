@@ -1,0 +1,11 @@
+{
+  "name": "cms-api",
+  "version": "0.0.1",
+  "description": "CMS API 接口文档",
+  "title": "cms-api",
+  "url": "http://api.example.com",
+  "header": {
+    "title": "系统规范",
+    "filename": "header.md"
+  }
+}

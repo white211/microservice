@@ -16,7 +16,7 @@ import java.io.Serializable;
  */
 public class TbUser extends Model<TbUser> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * id
@@ -104,7 +104,6 @@ public class TbUser extends Model<TbUser> {
      */
     private Integer status;
 
-
     public Integer getId() {
         return id;
     }
@@ -112,7 +111,6 @@ public class TbUser extends Model<TbUser> {
     public void setId(Integer id) {
         this.id = id;
     }
-
     public String getUsername() {
         return username;
     }
@@ -120,7 +118,6 @@ public class TbUser extends Model<TbUser> {
     public void setUsername(String username) {
         this.username = username;
     }
-
     public String getPassword() {
         return password;
     }
@@ -128,7 +125,6 @@ public class TbUser extends Model<TbUser> {
     public void setPassword(String password) {
         this.password = password;
     }
-
     public Integer getSex() {
         return sex;
     }
@@ -136,7 +132,6 @@ public class TbUser extends Model<TbUser> {
     public void setSex(Integer sex) {
         this.sex = sex;
     }
-
     public Integer getAge() {
         return age;
     }
@@ -144,7 +139,6 @@ public class TbUser extends Model<TbUser> {
     public void setAge(Integer age) {
         this.age = age;
     }
-
     public String getEmail() {
         return email;
     }
@@ -152,7 +146,6 @@ public class TbUser extends Model<TbUser> {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public Integer getSort() {
         return sort;
     }
@@ -160,7 +153,6 @@ public class TbUser extends Model<TbUser> {
     public void setSort(Integer sort) {
         this.sort = sort;
     }
-
     public Integer getEnableFlag() {
         return enableFlag;
     }
@@ -168,7 +160,6 @@ public class TbUser extends Model<TbUser> {
     public void setEnableFlag(Integer enableFlag) {
         this.enableFlag = enableFlag;
     }
-
     public LocalDateTime getEnableBegin() {
         return enableBegin;
     }
@@ -176,7 +167,6 @@ public class TbUser extends Model<TbUser> {
     public void setEnableBegin(LocalDateTime enableBegin) {
         this.enableBegin = enableBegin;
     }
-
     public LocalDateTime getEnableEnd() {
         return enableEnd;
     }
@@ -184,7 +174,6 @@ public class TbUser extends Model<TbUser> {
     public void setEnableEnd(LocalDateTime enableEnd) {
         this.enableEnd = enableEnd;
     }
-
     public LocalDateTime getCreateTime() {
         return createTime;
     }
@@ -192,7 +181,6 @@ public class TbUser extends Model<TbUser> {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
-
     public Integer getCreateBy() {
         return createBy;
     }
@@ -200,7 +188,6 @@ public class TbUser extends Model<TbUser> {
     public void setCreateBy(Integer createBy) {
         this.createBy = createBy;
     }
-
     public LocalDateTime getLastUpdateTime() {
         return lastUpdateTime;
     }
@@ -208,7 +195,6 @@ public class TbUser extends Model<TbUser> {
     public void setLastUpdateTime(LocalDateTime lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
-
     public Integer getLastUpdateBy() {
         return lastUpdateBy;
     }
@@ -216,7 +202,6 @@ public class TbUser extends Model<TbUser> {
     public void setLastUpdateBy(Integer lastUpdateBy) {
         this.lastUpdateBy = lastUpdateBy;
     }
-
     public String getComments() {
         return comments;
     }
@@ -224,7 +209,6 @@ public class TbUser extends Model<TbUser> {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
     public Integer getVersion() {
         return version;
     }
@@ -232,7 +216,6 @@ public class TbUser extends Model<TbUser> {
     public void setVersion(Integer version) {
         this.version = version;
     }
-
     public Integer getStatus() {
         return status;
     }
@@ -249,23 +232,23 @@ public class TbUser extends Model<TbUser> {
     @Override
     public String toString() {
         return "TbUser{" +
-        "id=" + id +
-        ", username=" + username +
-        ", password=" + password +
-        ", sex=" + sex +
-        ", age=" + age +
-        ", email=" + email +
-        ", sort=" + sort +
-        ", enableFlag=" + enableFlag +
-        ", enableBegin=" + enableBegin +
-        ", enableEnd=" + enableEnd +
-        ", createTime=" + createTime +
-        ", createBy=" + createBy +
-        ", lastUpdateTime=" + lastUpdateTime +
-        ", lastUpdateBy=" + lastUpdateBy +
-        ", comments=" + comments +
-        ", version=" + version +
-        ", status=" + status +
+            "id=" + id +
+            ", username=" + username +
+            ", password=" + password +
+            ", sex=" + sex +
+            ", age=" + age +
+            ", email=" + email +
+            ", sort=" + sort +
+            ", enableFlag=" + enableFlag +
+            ", enableBegin=" + enableBegin +
+            ", enableEnd=" + enableEnd +
+            ", createTime=" + createTime +
+            ", createBy=" + createBy +
+            ", lastUpdateTime=" + lastUpdateTime +
+            ", lastUpdateBy=" + lastUpdateBy +
+            ", comments=" + comments +
+            ", version=" + version +
+            ", status=" + status +
         "}";
     }
 }

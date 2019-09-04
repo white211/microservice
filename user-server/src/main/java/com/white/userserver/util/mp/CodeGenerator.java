@@ -8,11 +8,10 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.IColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine;
+import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
@@ -60,7 +59,7 @@ public class CodeGenerator  {
 
         List<FileOutConfig> fileOutConfigs = new ArrayList<>();
 
-        FileOutConfig fileOutConfig = new FileOutConfig("/templates/mapper.xml.vm") {
+        FileOutConfig fileOutConfig = new FileOutConfig("/templates/mapper.xml.ftl") {
             // 自定义输出文件目录
             @Override
             public String outputFile(TableInfo tableInfo) {
@@ -68,7 +67,7 @@ public class CodeGenerator  {
             }
         };
 
-        FileOutConfig fileOutConfig111 = new FileOutConfig("/templates/test.java.ftl") {
+        FileOutConfig fileOutConfig111 = new FileOutConfig("/templates/controller.java.ftl") {
             // 自定义输出文件目录
             @Override
             public String outputFile(TableInfo tableInfo) {
@@ -204,6 +203,7 @@ public class CodeGenerator  {
                         String entityUrl = this.getConfig().getPackageInfo().get("Entity");
                         String  pojoUrl = entityUrl.substring(0,entityUrl.lastIndexOf("."));
                         map.put("dtoPath",pojoUrl+".dto");
+                        //数据表字段转驼峰式
 
                         this.setMap(map);
                     }
@@ -216,7 +216,7 @@ public class CodeGenerator  {
 //                        return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
 //                    }
 //                }))
-//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/test.java.ftl") {
+//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/controller.java.ftl") {
 //                    // 自定义输出文件目录
 //                    @Override
 //                    public String outputFile(TableInfo tableInfo) {
@@ -236,7 +236,7 @@ public class CodeGenerator  {
                 .setXml(null)
                 // 自定义模板配置，模板可以参考源码 /mybatis/src/main/resources/template 使用 copy
                 // 至您项目 src/main/resources/template 目录下，模板名称也可自定义如下配置：
-//                 .setController(null)
+                 .setController(null)
 //                 .setEntity("...");
                 // .setMapper("...");
                 // .setXml("...");
@@ -244,13 +244,14 @@ public class CodeGenerator  {
                 // .setServiceImpl("...");
         );
 
+        //设置引擎模板
+        mpg.setTemplateEngine(new FreemarkerTemplateEngine());
+
         // 执行生成
         mpg.execute();
 
-
-
         // 打印注入设置，这里演示模板里面怎么获取注入内容【可无】
-//        System.err.println(mpg.getCfg().getMap().get("abc"));
+        // System.err.println(mpg.getCfg().getMap().get("abc"));
 
         System.err.println(mpg.getCfg().getMap().get("packageInfo"));
         System.err.println(mpg.getCfg().getMap().get("pathInfo"));
