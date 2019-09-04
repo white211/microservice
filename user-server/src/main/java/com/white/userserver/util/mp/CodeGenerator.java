@@ -57,6 +57,37 @@ public class CodeGenerator  {
 
     public static void main(String[] args) {
 
+
+        List<FileOutConfig> fileOutConfigs = new ArrayList<>();
+
+        FileOutConfig fileOutConfig = new FileOutConfig("/templates/mapper.xml.vm") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
+            }
+        };
+
+        FileOutConfig fileOutConfig111 = new FileOutConfig("/templates/test.java.ftl") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/java/com/white/userserver/controller/core/" + tableInfo.getEntityName() + "Controller.java";
+            }
+        };
+
+        FileOutConfig fileOutConfig222 = new FileOutConfig("/templates/dto.java.ftl") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/java/com/white/userserver/pojo/dto/" + tableInfo.getEntityName() + "DTO.java";
+            }
+        };
+
+        fileOutConfigs.add(fileOutConfig);
+        fileOutConfigs.add(fileOutConfig111);
+        fileOutConfigs.add(fileOutConfig222);
+
         // 自定义需要填充的字段
         List<TableFill> tableFillList = new ArrayList<>();
         tableFillList.add(new TableFill("ASDD_SS", FieldFill.INSERT_UPDATE));
@@ -151,23 +182,54 @@ public class CodeGenerator  {
                     public void initMap() {
                         Map<String, Object> map = new HashMap<>();
                         map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-自定义属性配置");
+                        //tableInfo
+                        map.put("table",this.getConfig().getTableInfoList().get(0));
+                        //packageInfo
+                        map.put("packageInfo",this.getConfig().getPackageInfo());
+                        //pathInfo
+                        map.put("pathInfo",this.getConfig().getPathInfo());
+                        //controllerPackage
+                        String controllerPath = this.getConfig().getPackageInfo().get("Controller");
+                        map.put("controllerPath",controllerPath+".core");
+                        //pathUrl
+                        String pathUrl = "com.white."+packageName;
+                        map.put("pathUrl",pathUrl);
+                        //数据表名驼峰式
+                        String tabelName = this.getConfig().getTableInfoList().get(0).getEntityName();
+                        String S1 = tabelName.substring(0,1);
+                        String s1 = S1.toLowerCase();
+                        String nameLowwerCaseCamel = s1+tabelName.substring(1);
+                        map.put("nameLowwerCaseCamel",nameLowwerCaseCamel);
+                        //dto路径设置
+                        String entityUrl = this.getConfig().getPackageInfo().get("Entity");
+                        String  pojoUrl = entityUrl.substring(0,entityUrl.lastIndexOf("."));
+                        map.put("dtoPath",pojoUrl+".dto");
+
                         this.setMap(map);
                     }
                 }
-                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/mapper.xml.vm") {
-                    // 自定义输出文件目录
-                    @Override
-                    public String outputFile(TableInfo tableInfo) {
-                        return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
-                    }
-                }))
-                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/controller.java.ftl") {
-                    // 自定义输出文件目录
-                    @Override
-                    public String outputFile(TableInfo tableInfo) {
-                        return path+"/src/main/java/com/white/userserver/controller/" + tableInfo.getEntityName() + "Controller.java";
-                    }
-                }))
+                .setFileOutConfigList(fileOutConfigs)
+//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/mapper.xml.vm") {
+//                    // 自定义输出文件目录
+//                    @Override
+//                    public String outputFile(TableInfo tableInfo) {
+//                        return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
+//                    }
+//                }))
+//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/test.java.ftl") {
+//                    // 自定义输出文件目录
+//                    @Override
+//                    public String outputFile(TableInfo tableInfo) {
+//                        return path+"/src/main/java/com/white/userserver/controller/core/" + tableInfo.getEntityName() + "Controller.java";
+//                    }
+//                }))
+//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/dto.java.ftl") {
+//                    // 自定义输出文件目录
+//                    @Override
+//                    public String outputFile(TableInfo tableInfo) {
+//                        return path+"/src/main/java/com/white/userserver/pojo/dto/" + tableInfo.getEntityName() + "DTO.java";
+//                    }
+//        }))
         ).setTemplate(
                 new TemplateConfig()
                 // 关闭默认 xml 生成，调整生成 至 根目录
@@ -185,8 +247,15 @@ public class CodeGenerator  {
         // 执行生成
         mpg.execute();
 
+
+
         // 打印注入设置，这里演示模板里面怎么获取注入内容【可无】
-        System.err.println(mpg.getCfg().getMap().get("abc"));
+//        System.err.println(mpg.getCfg().getMap().get("abc"));
+
+        System.err.println(mpg.getCfg().getMap().get("packageInfo"));
+        System.err.println(mpg.getCfg().getMap().get("pathInfo"));
+        System.err.println(mpg.getCfg().getMap().get("table"));
+
     }
 
 

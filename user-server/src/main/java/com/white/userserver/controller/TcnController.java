@@ -21,11 +21,7 @@ public class TcnController {
     @Autowired
     private TbUserService tbUserService;
 
-    @PostMapping("/txlcn")
-    public String execute(@RequestParam("value") String value,
-                          @RequestParam("ex") String exFlag){
-       return tbUserService.execute(value,exFlag);
-    }
+
 
 
 }

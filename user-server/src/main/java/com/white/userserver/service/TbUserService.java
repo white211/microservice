@@ -9,9 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author White
- * @since 2019-04-28
+ * @since 2019-09-04
  */
 public interface TbUserService extends IService<TbUser> {
 
-    String execute(String value,String exFlag);
 }
