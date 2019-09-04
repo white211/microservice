@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.IColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import com.baomidou.mybatisplus.generator.engine.AbstractTemplateEngine;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
@@ -24,7 +25,7 @@ import java.util.*;
  * @DateTime: 2019-04-28 11:08:29
  **/
 
-public class CodeGenerator {
+public class CodeGenerator  {
 
     private static String packageName="userserver";    //文件路径
     private static String authorName="White";     //作者
@@ -149,23 +150,32 @@ public class CodeGenerator {
                     @Override
                     public void initMap() {
                         Map<String, Object> map = new HashMap<>();
-                        map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-mp");
+                        map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-自定义属性配置");
                         this.setMap(map);
                     }
-                }.setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/mapper.xml.vm") {
+                }
+                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/mapper.xml.vm") {
                     // 自定义输出文件目录
                     @Override
                     public String outputFile(TableInfo tableInfo) {
                         return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
                     }
                 }))
+                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/controller.java.ftl") {
+                    // 自定义输出文件目录
+                    @Override
+                    public String outputFile(TableInfo tableInfo) {
+                        return path+"/src/main/java/com/white/userserver/controller/" + tableInfo.getEntityName() + "Controller.java";
+                    }
+                }))
         ).setTemplate(
+                new TemplateConfig()
                 // 关闭默认 xml 生成，调整生成 至 根目录
-                new TemplateConfig().setXml(null)
+                .setXml(null)
                 // 自定义模板配置，模板可以参考源码 /mybatis/src/main/resources/template 使用 copy
                 // 至您项目 src/main/resources/template 目录下，模板名称也可自定义如下配置：
-                // .setController("...");
-                // .setEntity("...");
+//                 .setController(null)
+//                 .setEntity("...");
                 // .setMapper("...");
                 // .setXml("...");
                 // .setService("...");
@@ -178,5 +188,6 @@ public class CodeGenerator {
         // 打印注入设置，这里演示模板里面怎么获取注入内容【可无】
         System.err.println(mpg.getCfg().getMap().get("abc"));
     }
+
 
 }
