@@ -29,7 +29,7 @@ public class TbRoleResourceController {
     private TbRoleResourceService tbRoleResourceService;
 
     /**
-     * @api {post} com.white.userserver.controller.core/new 1、角色菜单分配表-新增信息
+     * @api {post} /new 1、角色菜单分配表-新增信息
      * @apiGroup tb_role_resource
      *
      * @apiVersion 0.0.1

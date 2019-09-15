@@ -29,7 +29,7 @@ public class TbUserController {
     private TbUserService tbUserService;
 
     /**
-     * @api {post} com.white.userserver.controller.core/new 1、用户表-新增信息
+     * @api {post} /new 1、用户表-新增信息
      * @apiGroup tb_user
      *
      * @apiVersion 0.0.1

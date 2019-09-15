@@ -29,7 +29,7 @@ public class TbUserRoleController {
     private TbUserRoleService tbUserRoleService;
 
     /**
-     * @api {post} com.white.userserver.controller.core/new 1、用户角色分配表-新增信息
+     * @api {post} /new 1、用户角色分配表-新增信息
      * @apiGroup tb_user_role
      *
      * @apiVersion 0.0.1

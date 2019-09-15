@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author White
- * @since 2019-09-04
+ * @since 2019-09-06
  */
 public interface TbRoleResourceService extends IService<TbRoleResource> {
 

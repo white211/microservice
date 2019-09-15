@@ -1,0 +1,382 @@
+[cms] 12:49:01.455 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8cbf6207] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 12:49:03.733 [main] INFO  com.white.eurekaserver.EurekaServerApplication[679] - The following profiles are active: dev
+[cms] 12:49:07.885 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=8f74c3b2-6ec2-3fa6-9522-e7d289815d83
+[cms] 12:49:08.737 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8cbf6207] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 12:49:11.461 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8081 (http)
+[cms] 12:49:11.548 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 12:49:11.557 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 12:49:11.934 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 12:49:11.941 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 8158 ms
+[cms] 12:49:12.308 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 12:49:12.407 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4a933539
+[cms] 12:49:17.464 [main] INFO  com.sun.jersey.server.impl.application.WebApplicationImpl[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[cms] 12:49:17.743 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 12:49:17.750 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 12:49:18.256 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 12:49:18.272 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 12:49:20.323 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 12:49:22.087 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 12:49:30.409 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 12:49:30.593 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 12:49:30.596 [main] INFO  com.netflix.discovery.DiscoveryClient[352] - Client configured to neither register nor query for data.
+[cms] 12:49:30.640 [main] INFO  com.netflix.discovery.DiscoveryClient[365] - Discovery Client initialized at timestamp 1567486170635 with initial instances count: 0
+[cms] 12:49:30.811 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[63] - Initializing ...
+[cms] 12:49:30.826 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[188] - Adding new peer nodes [http://127.0.0.1:8081/eureka/]
+[cms] 12:49:32.149 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 12:49:32.154 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 12:49:32.165 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 12:49:32.178 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 12:49:32.517 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[110] - Replica node URL:  http://127.0.0.1:8081/eureka/
+[cms] 12:49:32.550 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[151] - Finished initializing remote region registries. All known remote regions: []
+[cms] 12:49:32.563 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[70] - Initialized
+[cms] 12:49:32.617 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[cms] 12:49:32.994 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application EUREKA-SERVER with eureka with status UP
+[cms] 12:49:33.088 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[109] - Setting the eureka configuration..
+[cms] 12:49:33.163 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[cms] 12:49:33.173 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[128] - Eureka environment value eureka.environment is not set, defaulting to test
+[cms] 12:49:33.278 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[184] - isAws returned false
+[cms] 12:49:33.290 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8081 (http) with context path ''
+[cms] 12:49:33.286 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[152] - Initialized server context
+[cms] 12:49:33.302 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8081
+[cms] 12:49:33.304 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[241] - Got 1 instances from neighboring DS node
+[cms] 12:49:33.315 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[242] - Renew threshold is: 1
+[cms] 12:49:33.312 [main] INFO  com.white.eurekaserver.EurekaServerApplication[59] - Started EurekaServerApplication in 38.248 seconds (JVM running for 122.071)
+[cms] 12:49:33.319 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[253] - Changing status to UP
+[cms] 12:49:33.394 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration[72] - Started Eureka Server
+[cms] 12:49:33.756 [http-nio-8081-exec-10] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 12:49:33.760 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 12:49:33.778 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 17 ms
+[cms] 12:49:45.151 [http-nio-8081-exec-9] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=false)
+[cms] 12:49:45.937 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=true)
+[cms] 12:50:33.370 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 12:51:33.370 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 12:52:33.370 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 12:53:33.371 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 12:54:33.437 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 67ms
+[cms] 12:54:50.162 [Thread-14] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application EUREKA-SERVER with eureka with status DOWN
+[cms] 12:54:50.827 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[76] - Shutting down ...
+[cms] 12:54:51.081 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[79] - Shut down
+[cms] 12:54:51.200 [Thread-14] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 12:54:53.411 [http-nio-8081-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[330] - Cancelled instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 (replication=false)
+[cms] 12:54:53.542 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 12:54:53.565 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 12:54:53.638 [http-nio-8081-exec-6] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status DOWN (replication=false)
+[cms] 13:07:33.136 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8a18d7c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 13:07:35.591 [main] INFO  com.white.eurekaserver.EurekaServerApplication[679] - The following profiles are active: dev
+[cms] 13:07:40.359 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=8f74c3b2-6ec2-3fa6-9522-e7d289815d83
+[cms] 13:07:40.989 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8a18d7c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 13:07:43.504 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8081 (http)
+[cms] 13:07:43.568 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 13:07:43.571 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 13:07:43.881 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 13:07:43.985 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 8353 ms
+[cms] 13:07:44.574 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 13:07:44.629 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6b70c06b
+[cms] 13:07:49.571 [main] INFO  com.sun.jersey.server.impl.application.WebApplicationImpl[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[cms] 13:07:49.808 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 13:07:49.895 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 13:07:50.598 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 13:07:50.684 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 13:07:53.667 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 13:07:58.294 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 13:08:04.679 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 13:08:04.895 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 13:08:04.904 [main] INFO  com.netflix.discovery.DiscoveryClient[352] - Client configured to neither register nor query for data.
+[cms] 13:08:04.944 [main] INFO  com.netflix.discovery.DiscoveryClient[365] - Discovery Client initialized at timestamp 1567487284937 with initial instances count: 0
+[cms] 13:08:05.039 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[63] - Initializing ...
+[cms] 13:08:05.043 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[188] - Adding new peer nodes [http://127.0.0.1:8081/eureka/]
+[cms] 13:08:06.774 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 13:08:06.778 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 13:08:06.783 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 13:08:06.784 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 13:08:07.120 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[110] - Replica node URL:  http://127.0.0.1:8081/eureka/
+[cms] 13:08:07.158 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[151] - Finished initializing remote region registries. All known remote regions: []
+[cms] 13:08:07.220 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[70] - Initialized
+[cms] 13:08:07.271 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[cms] 13:08:08.158 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application EUREKA-SERVER with eureka with status UP
+[cms] 13:08:08.219 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[109] - Setting the eureka configuration..
+[cms] 13:08:08.251 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[cms] 13:08:08.263 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[128] - Eureka environment value eureka.environment is not set, defaulting to test
+[cms] 13:08:08.332 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[184] - isAws returned false
+[cms] 13:08:08.340 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[152] - Initialized server context
+[cms] 13:08:08.354 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[241] - Got 1 instances from neighboring DS node
+[cms] 13:08:08.362 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[242] - Renew threshold is: 1
+[cms] 13:08:08.364 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[253] - Changing status to UP
+[cms] 13:08:08.403 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8081 (http) with context path ''
+[cms] 13:08:08.415 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8081
+[cms] 13:08:08.412 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration[72] - Started Eureka Server
+[cms] 13:08:08.426 [main] INFO  com.white.eurekaserver.EurekaServerApplication[59] - Started EurekaServerApplication in 41.411 seconds (JVM running for 113.918)
+[cms] 13:08:16.296 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 13:08:16.302 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 13:08:16.336 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 31 ms
+[cms] 13:08:16.813 [http-nio-8081-exec-1] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=false)
+[cms] 13:08:17.586 [http-nio-8081-exec-2] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=true)
+[cms] 13:09:08.375 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:10:08.376 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 13:11:08.376 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:12:08.376 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:13:08.377 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:14:08.378 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 13:15:08.379 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:16:08.424 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 45ms
+[cms] 13:17:08.424 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:18:08.425 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:19:08.497 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 72ms
+[cms] 13:20:08.497 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:21:08.498 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:22:08.499 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 13:23:07.164 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 13:23:08.499 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:24:08.500 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:25:08.504 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 4ms
+[cms] 13:26:08.531 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 26ms
+[cms] 13:26:59.144 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=false)
+[cms] 13:26:59.789 [http-nio-8081-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=true)
+[cms] 13:27:01.907 [http-nio-8081-exec-6] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=false)
+[cms] 13:27:02.422 [http-nio-8081-exec-1] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=true)
+[cms] 13:27:05.036 [http-nio-8081-exec-2] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[330] - Cancelled instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 (replication=false)
+[cms] 13:27:05.629 [http-nio-8081-exec-3] INFO  com.netflix.eureka.resources.InstanceResource[288] - Not Found (Cancel): USER-SERVER - DESKTOP-DIC4SEB:user-server:8085
+[cms] 13:27:08.530 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 13:27:17.576 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status DOWN (replication=false)
+[cms] 13:27:18.118 [http-nio-8081-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status DOWN (replication=true)
+[cms] 13:27:18.229 [Thread-14] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application EUREKA-SERVER with eureka with status DOWN
+[cms] 13:27:18.437 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[76] - Shutting down ...
+[cms] 13:27:18.681 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[79] - Shut down
+[cms] 13:27:19.042 [Thread-14] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 13:27:19.127 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 13:27:19.130 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 14:32:37.336 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b7f244d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 14:32:42.073 [main] INFO  com.white.eurekaserver.EurekaServerApplication[679] - The following profiles are active: dev
+[cms] 14:32:47.276 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=8f74c3b2-6ec2-3fa6-9522-e7d289815d83
+[cms] 14:32:48.320 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b7f244d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 14:32:51.946 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8081 (http)
+[cms] 14:32:52.671 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 14:32:52.679 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 14:32:53.882 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 14:32:54.006 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 11902 ms
+[cms] 14:32:54.834 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 14:32:54.946 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3c455af5
+[cms] 14:33:01.149 [main] INFO  com.sun.jersey.server.impl.application.WebApplicationImpl[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[cms] 14:33:01.494 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 14:33:01.644 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 14:33:02.329 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 14:33:02.464 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 14:33:07.906 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 14:33:12.094 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 14:33:21.293 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 14:33:21.548 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 14:33:21.567 [main] INFO  com.netflix.discovery.DiscoveryClient[352] - Client configured to neither register nor query for data.
+[cms] 14:33:21.627 [main] INFO  com.netflix.discovery.DiscoveryClient[365] - Discovery Client initialized at timestamp 1567492401620 with initial instances count: 0
+[cms] 14:33:21.903 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[63] - Initializing ...
+[cms] 14:33:22.003 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[188] - Adding new peer nodes [http://127.0.0.1:8081/eureka/]
+[cms] 14:33:23.961 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 14:33:24.008 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 14:33:24.052 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 14:33:24.061 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 14:33:25.049 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[110] - Replica node URL:  http://127.0.0.1:8081/eureka/
+[cms] 14:33:25.516 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[151] - Finished initializing remote region registries. All known remote regions: []
+[cms] 14:33:25.833 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[70] - Initialized
+[cms] 14:33:26.447 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[cms] 14:33:27.197 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application EUREKA-SERVER with eureka with status UP
+[cms] 14:33:27.243 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[109] - Setting the eureka configuration..
+[cms] 14:33:27.266 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[cms] 14:33:27.274 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[128] - Eureka environment value eureka.environment is not set, defaulting to test
+[cms] 14:33:27.343 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[184] - isAws returned false
+[cms] 14:33:27.358 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[152] - Initialized server context
+[cms] 14:33:27.362 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[241] - Got 1 instances from neighboring DS node
+[cms] 14:33:27.364 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[242] - Renew threshold is: 1
+[cms] 14:33:27.365 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[253] - Changing status to UP
+[cms] 14:33:27.417 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration[72] - Started Eureka Server
+[cms] 14:33:27.680 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8081 (http) with context path ''
+[cms] 14:33:27.682 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8081
+[cms] 14:33:27.687 [main] INFO  com.white.eurekaserver.EurekaServerApplication[59] - Started EurekaServerApplication in 58.321 seconds (JVM running for 156.528)
+[cms] 14:33:28.074 [http-nio-8081-exec-10] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 14:33:28.097 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 14:33:28.123 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 25 ms
+[cms] 14:33:41.111 [http-nio-8081-exec-9] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=false)
+[cms] 14:33:41.927 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=true)
+[cms] 14:34:27.403 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:35:27.404 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:35:41.432 [http-nio-8081-exec-4] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=false)
+[cms] 14:35:41.956 [http-nio-8081-exec-10] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=true)
+[cms] 14:36:27.404 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:37:27.414 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 11ms
+[cms] 14:38:27.415 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:39:27.416 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:40:27.416 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:41:27.416 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:42:27.417 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:43:27.418 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:44:27.418 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:45:27.419 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:46:27.419 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:47:27.420 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:48:25.543 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 5
+[cms] 14:48:27.420 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:49:27.421 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:50:27.421 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:51:27.421 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:52:27.422 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:53:27.422 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:54:27.422 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:55:27.423 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:56:27.424 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 14:57:27.424 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:58:27.424 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 14:59:27.428 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 4ms
+[cms] 15:00:27.428 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:01:27.429 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:02:27.429 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:03:25.520 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 5
+[cms] 15:03:27.429 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:04:27.430 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:05:27.430 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:05:47.311 [http-nio-8081-exec-7] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=false)
+[cms] 15:05:47.853 [http-nio-8081-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=true)
+[cms] 15:05:51.403 [http-nio-8081-exec-6] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[330] - Cancelled instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 (replication=false)
+[cms] 15:05:51.971 [http-nio-8081-exec-2] INFO  com.netflix.eureka.resources.InstanceResource[288] - Not Found (Cancel): USER-SERVER - DESKTOP-DIC4SEB:user-server:8085
+[cms] 15:06:27.446 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 15ms
+[cms] 15:07:27.461 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 15ms
+[cms] 15:08:27.462 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:09:27.462 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:10:27.462 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:11:27.463 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:12:27.463 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:13:27.464 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:14:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:15:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:16:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:17:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:18:25.525 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 15:18:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:19:27.465 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:20:27.466 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:21:27.466 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:22:27.466 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:23:27.466 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:24:27.467 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:25:27.468 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:26:27.468 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:27:27.469 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:28:27.469 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:29:27.470 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:30:27.475 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 4ms
+[cms] 15:31:27.475 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:32:27.476 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:33:25.520 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 15:33:27.476 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:34:27.476 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:35:27.477 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:36:27.478 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:37:27.478 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:38:27.488 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 8ms
+[cms] 15:39:27.486 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:40:27.487 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:41:27.524 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 36ms
+[cms] 15:41:32.797 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=false)
+[cms] 15:41:33.384 [http-nio-8081-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status UP (replication=true)
+[cms] 15:42:27.524 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:42:30.265 [http-nio-8081-exec-10] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=false)
+[cms] 15:42:30.798 [http-nio-8081-exec-3] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 with status DOWN (replication=true)
+[cms] 15:42:33.369 [http-nio-8081-exec-2] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[330] - Cancelled instance USER-SERVER/DESKTOP-DIC4SEB:user-server:8085 (replication=false)
+[cms] 15:42:33.887 [http-nio-8081-exec-4] INFO  com.netflix.eureka.resources.InstanceResource[288] - Not Found (Cancel): USER-SERVER - DESKTOP-DIC4SEB:user-server:8085
+[cms] 15:43:27.525 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:44:27.525 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:45:27.526 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 15:46:27.527 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:47:27.527 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:48:25.522 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 15:48:27.527 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:49:27.527 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:50:27.528 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:51:27.557 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 28ms
+[cms] 15:52:27.557 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:53:27.557 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:54:27.557 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:55:27.566 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 9ms
+[cms] 15:56:27.574 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 7ms
+[cms] 15:57:27.574 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:58:27.574 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 15:59:27.574 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:00:27.575 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:01:27.576 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:02:27.577 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 16:03:25.546 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 16:03:27.578 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:04:27.578 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:05:27.579 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 2ms
+[cms] 16:06:27.579 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:07:27.579 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:08:27.579 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:09:27.579 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:10:27.584 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 5ms
+[cms] 16:11:27.585 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:12:27.585 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:13:27.586 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:14:27.587 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:15:27.588 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:16:27.588 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:17:27.588 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:18:25.543 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 16:18:27.588 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:19:27.601 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 13ms
+[cms] 16:20:27.601 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:21:27.601 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:22:27.605 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 3ms
+[cms] 16:23:27.605 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:24:27.605 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:25:27.606 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:26:27.606 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:27:27.607 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:28:27.607 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:29:27.607 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:30:27.608 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:31:27.609 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:32:27.610 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 16:33:25.542 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 16:33:27.611 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 16:34:27.611 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:35:27.611 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:36:27.611 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:37:27.612 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 16:38:27.612 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:39:27.624 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 11ms
+[cms] 16:40:27.625 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:41:27.625 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:42:27.626 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:43:27.627 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 16:44:27.628 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:45:27.628 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:46:27.629 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:47:27.630 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:48:25.544 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 16:48:27.630 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:49:27.630 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:50:27.631 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:51:27.631 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:52:27.631 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:53:27.631 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:54:27.632 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:55:27.633 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:56:27.633 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:57:27.633 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:58:27.634 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 16:59:27.634 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:00:27.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:01:27.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:02:27.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:03:25.569 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[539] - Current renewal threshold is : 3
+[cms] 17:03:27.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:04:27.637 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 1ms
+[cms] 17:05:27.638 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:06:27.638 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:07:27.642 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 4ms
+[cms] 17:08:27.642 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:09:27.644 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 2ms
+[cms] 17:10:27.644 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:11:27.644 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:12:27.645 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:13:27.646 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:14:27.645 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:15:27.646 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 17:16:27.647 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms

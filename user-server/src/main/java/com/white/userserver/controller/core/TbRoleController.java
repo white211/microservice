@@ -29,7 +29,7 @@ public class TbRoleController {
     private TbRoleService tbRoleService;
 
     /**
-     * @api {post} com.white.userserver.controller.core/new 1、角色表-新增信息
+     * @api {post} /new 1、角色表-新增信息
      * @apiGroup tb_role
      *
      * @apiVersion 0.0.1

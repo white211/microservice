@@ -23,4 +23,7 @@ public class Routes {
 
     @Desc("生成报表")
     public static final String TB_USER_LIST_DOWNLOAD = "/user/list/download";
+
+    @Desc("读取报表")
+    public static final String TB_USER_LIST_UPLOAD = "/user/list/upload";
 }

@@ -52,7 +52,25 @@ public class CodeGenerator  {
         throw new MybatisPlusException("请输入正确的" + tip + "！");
     }
 
-
+    /**
+     * <p>
+     * 读取控制台内容 多个表同时读取
+     * </p>
+     */
+    public static String[] scanner2(String tip) {
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder help = new StringBuilder();
+        help.append("请输入" + tip + "(表之间以英文逗号隔开)：");
+        System.out.println(help.toString());
+        if (scanner.hasNext()) {
+            String ipt = scanner.next();
+            String [] tables = ipt.split(",");
+            if (StringUtils.isNotEmpty(ipt)) {
+                return tables;
+            }
+        }
+        throw new MybatisPlusException("请输入正确的" + tip + "！");
+    }
 
     public static void main(String[] args) {
 
@@ -83,9 +101,18 @@ public class CodeGenerator  {
             }
         };
 
+        FileOutConfig fileOutConfig333 = new FileOutConfig("/templates/entity.java.ftl") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/java/com/white/userserver/pojo/entity/" + tableInfo.getEntityName() + ".java";
+            }
+        };
+
         fileOutConfigs.add(fileOutConfig);
         fileOutConfigs.add(fileOutConfig111);
         fileOutConfigs.add(fileOutConfig222);
+        fileOutConfigs.add(fileOutConfig333);
 
         // 自定义需要填充的字段
         List<TableFill> tableFillList = new ArrayList<>();
@@ -134,8 +161,8 @@ public class CodeGenerator  {
                         //.setDbColumnUnderline(true)//全局下划线命名
 //                        .setTablePrefix(new String[]{prefix})// 此处可以修改为您的表前缀
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
-                        .setInclude(scanner("表名"))
-//                        .setInclude(new String[] { table }) // 需要生成的表
+//                        .setInclude(scanner("表名"))
+                        .setInclude(scanner2("表名")) // 需要生成的表
                         .setRestControllerStyle(true)
                         //.setExclude(new String[]{"test"}) // 排除生成的表
                         // 自定义实体父类
@@ -181,8 +208,11 @@ public class CodeGenerator  {
                     public void initMap() {
                         Map<String, Object> map = new HashMap<>();
                         map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-自定义属性配置");
+
+                        // TODO: 2019/9/4 当多个table的时候 这里get(0) 会出错
                         //tableInfo
-                        map.put("table",this.getConfig().getTableInfoList().get(0));
+//                        map.put("table",this.getConfig().getTableInfoList().get(0));
+                        map.put("table",this.getConfig().getTableInfoList());
                         //packageInfo
                         map.put("packageInfo",this.getConfig().getPackageInfo());
                         //pathInfo
@@ -209,27 +239,6 @@ public class CodeGenerator  {
                     }
                 }
                 .setFileOutConfigList(fileOutConfigs)
-//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/mapper.xml.vm") {
-//                    // 自定义输出文件目录
-//                    @Override
-//                    public String outputFile(TableInfo tableInfo) {
-//                        return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
-//                    }
-//                }))
-//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/controller.java.ftl") {
-//                    // 自定义输出文件目录
-//                    @Override
-//                    public String outputFile(TableInfo tableInfo) {
-//                        return path+"/src/main/java/com/white/userserver/controller/core/" + tableInfo.getEntityName() + "Controller.java";
-//                    }
-//                }))
-//                .setFileOutConfigList(Collections.<FileOutConfig>singletonList(new FileOutConfig("/templates/dto.java.ftl") {
-//                    // 自定义输出文件目录
-//                    @Override
-//                    public String outputFile(TableInfo tableInfo) {
-//                        return path+"/src/main/java/com/white/userserver/pojo/dto/" + tableInfo.getEntityName() + "DTO.java";
-//                    }
-//        }))
         ).setTemplate(
                 new TemplateConfig()
                 // 关闭默认 xml 生成，调整生成 至 根目录
@@ -237,7 +246,7 @@ public class CodeGenerator  {
                 // 自定义模板配置，模板可以参考源码 /mybatis/src/main/resources/template 使用 copy
                 // 至您项目 src/main/resources/template 目录下，模板名称也可自定义如下配置：
                  .setController(null)
-//                 .setEntity("...");
+                 .setEntity(null)
                 // .setMapper("...");
                 // .setXml("...");
                 // .setService("...");
@@ -256,6 +265,7 @@ public class CodeGenerator  {
         System.err.println(mpg.getCfg().getMap().get("packageInfo"));
         System.err.println(mpg.getCfg().getMap().get("pathInfo"));
         System.err.println(mpg.getCfg().getMap().get("table"));
+        System.err.println(mpg.getCfg().getMap().get("nameLowwerCaseCamel"));
 
     }
 
