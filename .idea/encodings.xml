@@ -8,7 +8,9 @@
     <file url="file://$PROJECT_DIR$/gateway-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway2-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/report" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resource-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-server" charset="UTF-8" />
   </component>
 </project>

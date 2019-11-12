@@ -1,0 +1,34 @@
+[cms] 17:57:24.200 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 17:57:32.235 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:57:43.892 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 17:58:27.071 [http-nio-8081-exec-2] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[353] - DS: Registry: lease doesn't exist, registering resource: CONFIG-SERVER - DESKTOP-DIC4SEB:config-server:8082
+[cms] 17:58:27.075 [http-nio-8081-exec-2] WARN  com.netflix.eureka.resources.InstanceResource[116] - Not Found (Renew): CONFIG-SERVER - DESKTOP-DIC4SEB:config-server:8082
+[cms] 20:56:00.446 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 20:56:03.282 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 20:56:07.111 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 20:58:32.898 [http-nio-8081-exec-7] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[353] - DS: Registry: lease doesn't exist, registering resource: CONFIG-SERVER - DESKTOP-DIC4SEB:config-server:8082
+[cms] 20:58:32.903 [http-nio-8081-exec-7] WARN  com.netflix.eureka.resources.InstanceResource[116] - Not Found (Renew): CONFIG-SERVER - DESKTOP-DIC4SEB:config-server:8082
+[cms] 21:14:55.569 [http-nio-8081-exec-6] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082
+[cms] 21:14:55.577 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1 failed with response code 404
+[cms] 21:14:55.579 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1: missing entry.
+[cms] 21:56:23.111 [http-nio-8081-exec-9] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082
+[cms] 21:56:23.124 [TaskBatchingWorker-target_127.0.0.1-9] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1 failed with response code 404
+[cms] 21:56:23.125 [TaskBatchingWorker-target_127.0.0.1-9] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1: missing entry.
+[cms] 22:24:11.765 [http-nio-8081-exec-6] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082
+[cms] 22:24:11.848 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1 failed with response code 404
+[cms] 22:24:11.852 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082:Cancel@127.0.0.1: missing entry.
+[cms] 22:50:03.333 [http-nio-8081-exec-4] WARN  com.netflix.eureka.registry.AbstractInstanceRegistry[315] - DS: Registry: cancel failed because Lease is not registered for: USER-SERVER/DESKTOP-DIC4SEB:user-server:8085
+[cms] 22:50:03.348 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.ReplicationTask[35] - The replication of task USER-SERVER/DESKTOP-DIC4SEB:user-server:8085:Cancel@127.0.0.1 failed with response code 404
+[cms] 22:50:03.358 [TaskBatchingWorker-target_127.0.0.1-14] WARN  com.netflix.eureka.cluster.PeerEurekaNode[171] - USER-SERVER/DESKTOP-DIC4SEB:user-server:8085:Cancel@127.0.0.1: missing entry.
+[cms] 22:52:37.961 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 22:52:48.401 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 22:53:09.998 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:35:17.998 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 23:35:23.343 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:35:29.345 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:38:06.975 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 23:38:08.862 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:38:08.877 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:41:58.281 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId[135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[cms] 23:42:03.771 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+[cms] 23:42:12.107 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.

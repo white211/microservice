@@ -1,0 +1,19 @@
+[cms] 00:00:25.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:01:25.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:02:25.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:03:25.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:04:25.635 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:05:25.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:06:25.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:07:25.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:08:25.636 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:09:25.659 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 22ms
+[cms] 00:10:25.659 [Eureka-EvictionTimer] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[1250] - Running the evict task with compensationTime 0ms
+[cms] 00:10:54.397 [http-nio-8081-exec-1] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status DOWN (replication=false)
+[cms] 00:10:54.956 [http-nio-8081-exec-5] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status DOWN (replication=true)
+[cms] 00:10:55.585 [Thread-14] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[65] - Unregistering application EUREKA-SERVER with eureka with status DOWN
+[cms] 00:10:55.629 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[76] - Shutting down ...
+[cms] 00:10:55.697 [Thread-14] INFO  com.netflix.eureka.DefaultEurekaServerContext[79] - Shut down
+[cms] 00:10:55.741 [Thread-14] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[cms] 00:10:55.809 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
+[cms] 00:10:55.812 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient

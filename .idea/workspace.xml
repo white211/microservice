@@ -2,63 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a06b216-6569-4323-acbb-3de8aafe48e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway2-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway2-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway2-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway2-server/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/excel/UploadDataListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/entity.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_6_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/ReportApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/Desc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGeneratorAllFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/templates/dto.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/main/resources/templates/entity.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/src/test/java/com/niushibang/report/ReportApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/Desc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/Exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/Exception/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/util/mybatisplus/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/util/mybatisplus/CodeGeneratorAllFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/templates/dto.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/templates/entity.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/test/java/com/niushibang/report/ReportApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_easyexcel_2_0_0_beta3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_easyexcel_2_0_0_beta3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_05.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_05.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_boringssl_static_2_0_24_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_client_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_common_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_logging_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_rocketmq_rocketmq_remoting_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_6_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_1_0_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.2019-09-03.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/warn.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/ExportExcelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/ExportExcelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/Routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TcnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TcnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbResourceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbRoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbRoleResourceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbUserRoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbResourceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbRoleResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbRoleResourceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbUserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbUserRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/dto/TbRoleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/dto/TbUserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbRoleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbRoleResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbRoleResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbRoleResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbResourceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbRoleResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbRoleResourceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbRoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator2.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/mybatis/mapper/TbRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/mybatis/mapper/TbUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/templates/controller.java.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/gateway-server/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,6 +101,8 @@
     <ignored path="$PROJECT_DIR$/order-server/target/" />
     <ignored path="$PROJECT_DIR$/resource-server/target/" />
     <ignored path="$PROJECT_DIR$/gateway2-server/target/" />
+    <ignored path="$PROJECT_DIR$/report/target/" />
+    <ignored path="$PROJECT_DIR$/user/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +127,7 @@
     <session id="36087574">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="129" />
+          <entry key="project.closed" value="130" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -101,7 +135,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.20" value="4" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="3" />
@@ -129,7 +163,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="132" />
+          <entry key="project.opened" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -137,19 +171,19 @@
           <entry key="MD" value="3" />
           <entry key="class" value="76" />
           <entry key="ftl" value="50" />
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="740" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="782" />
           <entry key="jpg" value="5" />
           <entry key="json" value="2" />
           <entry key="kt" value="1" />
           <entry key="log" value="2" />
-          <entry key="md" value="6" />
+          <entry key="md" value="7" />
           <entry key="pom" value="3" />
-          <entry key="properties" value="31" />
-          <entry key="txt" value="11" />
+          <entry key="properties" value="32" />
+          <entry key="txt" value="12" />
           <entry key="vm" value="2" />
-          <entry key="xml" value="110" />
-          <entry key="yml" value="80" />
+          <entry key="xml" value="122" />
+          <entry key="yml" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -157,15 +191,15 @@
           <entry key="CLASS" value="76" />
           <entry key="FTL" value="50" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="740" />
+          <entry key="JAVA" value="782" />
           <entry key="JSON" value="2" />
           <entry key="Kotlin" value="1" />
-          <entry key="Markdown" value="9" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Properties" value="31" />
+          <entry key="Markdown" value="10" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Properties" value="32" />
           <entry key="VTL" value="2" />
-          <entry key="XML" value="113" />
-          <entry key="YAML" value="80" />
+          <entry key="XML" value="125" />
+          <entry key="YAML" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -173,27 +207,42 @@
           <entry key="MD" value="315" />
           <entry key="dummy" value="14" />
           <entry key="ftl" value="1112" />
-          <entry key="java" value="13021" />
+          <entry key="java" value="13040" />
           <entry key="md" value="22" />
-          <entry key="xml" value="546" />
-          <entry key="yml" value="160" />
+          <entry key="xml" value="591" />
+          <entry key="yml" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="FTL" value="1112" />
-          <entry key="JAVA" value="13021" />
+          <entry key="JAVA" value="13040" />
           <entry key="Markdown" value="337" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SQL" value="8" />
-          <entry key="XML" value="538" />
-          <entry key="YAML" value="160" />
+          <entry key="XML" value="583" />
+          <entry key="YAML" value="184" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/UserApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -209,11 +258,21 @@
     <findStrings>
       <find>JedisUtil</find>
       <find>mybatis</find>
+      <find>com.white.user.common</find>
+      <find>com.niushibang.report</find>
+      <find>niushibang</find>
     </findStrings>
     <replaceStrings>
       <replace>JedisHepler</replace>
       <replace>JedisHelper</replace>
+      <replace>com.white.user</replace>
+      <replace>user</replace>
+      <replace>white</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\microservice\user\src\main\java\com\white\user-server</dir>
+      <dir>C:\microservice\user\src\main\java\com\white\user</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -221,14 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbResourceMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbRoleMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbRoleResourceMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbUserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserService.java" />
-        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderFlowMapper.java" />
-        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderItemMapper.java" />
-        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderMapper.java" />
         <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResLogisticMapper.java" />
         <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductCateMapper.java" />
         <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductMapper.java" />
@@ -263,7 +314,6 @@
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbUserController.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/resources/templates/controller.java.ftl" />
         <option value="$PROJECT_DIR$/user-server/src/main/resources/templates/entity.java.ftl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gateway2-server/src/main/java/com/white/gateway2server/Gateway2ServerApplication.java" />
         <option value="$PROJECT_DIR$/gateway2-server/pom.xml" />
         <option value="$PROJECT_DIR$/gateway2-server/src/main/resources/bootstrap.yml" />
@@ -272,6 +322,15 @@
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/excel/UploadDataListener.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUser.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/ExportExcelController.java" />
+        <option value="$PROJECT_DIR$/report/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/report/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/util/mybatisplus/CodeGeneratorAllFile.java" />
+        <option value="$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGeneratorAllFile.java" />
+        <option value="$PROJECT_DIR$/report/src/main/java/com/white/report/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/ReportApplication.java" />
       </list>
     </option>
   </component>
@@ -290,17 +349,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="resource-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="resource-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -318,8 +367,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,34 +380,88 @@
             <path>
               <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway2-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway2-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway2-server" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="white" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="white" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/microservice/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/microservice/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568026705913" />
-    <property name="last_opened_file_path" value="C:/yinmi/SpringcloudConfig" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573550498272" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/white/user" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -366,8 +470,12 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver\util\excel" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\microservice\user\src\main\resources" />
+      <recent name="C:\microservice\report\src\main\resources" />
+      <recent name="C:\microservice" />
+      <recent name="C:\microservice\gateway2-server\src\main\resources" />
+      <recent name="C:\microservice\user-server\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.white.gatewayserver.config" />
@@ -376,12 +484,9 @@
       <recent name="com.white.gatewayserver.util.mp" />
       <recent name="com.white.resourceserver.util.mp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\microservice\gateway2-server\src\main\resources" />
-      <recent name="C:\microservice\user-server\src\main\resources\templates" />
-      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver\controller\core" />
-      <recent name="C:\microservice\user-server\src" />
-      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\microservice\user\src\main\java\com" />
+      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver\util\excel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -396,20 +501,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CodeGenerator">
-    <configuration name="AsyncProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.white.userserver.util.rocketMq.AsyncProducer" />
-      <module name="user-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.white.userserver.util.rocketMq.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.CodeGeneratorAllFile (2)">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.white.userserver.util.mp.CodeGenerator" />
       <module name="user-server" />
@@ -423,12 +515,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListToMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.white.userserver.util.lambda.ListToMap" />
-      <module name="user-server" />
+    <configuration name="CodeGeneratorAllFile (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.white.user.util.mybatisplus.CodeGeneratorAllFile" />
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.white.userserver.util.lambda.*" />
+          <option name="PATTERN" value="com.white.user.util.mybatisplus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -436,12 +528,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.white.userserver.util.rocketMq.SyncProducer" />
-      <module name="user-server" />
+    <configuration name="CodeGeneratorAllFile (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.white.report.util.mybatisplus.CodeGeneratorAllFile" />
+      <module name="report" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.white.userserver.util.rocketMq.*" />
+          <option name="PATTERN" value="com.white.report.util.mybatisplus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGeneratorAllFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niushibang.report.util.mybatisplus.CodeGeneratorAllFile" />
+      <module name="report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niushibang.report.util.mybatisplus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -504,6 +609,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReportApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.white.user.ReportApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="report" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.niushibang.report.ReportApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="resource-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.white.resourceserver.ResourceServerApplication" />
@@ -535,19 +654,21 @@
       <item itemvalue="Spring Boot.ResourceServerApplication" />
       <item itemvalue="Spring Boot.OrderServerApplication" />
       <item itemvalue="Spring Boot.Gateway2ServerApplication" />
-      <item itemvalue="Application.SyncProducer" />
-      <item itemvalue="Application.AsyncProducer" />
-      <item itemvalue="Application.ListToMap" />
+      <item itemvalue="Spring Boot.ReportApplication" />
+      <item itemvalue="Spring Boot.ReportApplication (1)" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Application.CodeGeneratorAllFile" />
+      <item itemvalue="Application.CodeGeneratorAllFile (1)" />
+      <item itemvalue="Application.CodeGeneratorAllFile (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGeneratorAllFile (2)" />
+        <item itemvalue="Application.CodeGeneratorAllFile (1)" />
+        <item itemvalue="Application.CodeGeneratorAllFile" />
         <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.TestList" />
-        <item itemvalue="Application.ListToMap" />
-        <item itemvalue="Application.SyncProducer" />
-        <item itemvalue="Application.AsyncProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -693,11 +814,12 @@
       <workItem from="1568079449162" duration="1390000" />
       <workItem from="1568090001342" duration="1250000" />
       <workItem from="1568508288298" duration="1977000" />
+      <workItem from="1573550445676" duration="65000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318157000" />
+    <option name="totallyTimeSpent" value="322107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,6 +832,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -718,8 +841,8 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.20801815" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49848714" weight="0.86409396" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.25340393" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49848714" weight="0.49161074" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32550335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45967743" />
@@ -730,15 +853,16 @@
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32718122" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.83387095" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" weight="0.8489933" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.8322148" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" weight="0.85738254" />
       <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49924356" weight="0.8942953" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.36384267" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3540091" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -814,203 +938,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbUserRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbRoleResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/TbUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mybatis/mapper/TbUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mybatis/mapper/TbRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/templates/dto.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/po/TableField.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/po/TableInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/builder/ConfigBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="118" column="20" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-996">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/dto/TbRoleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/dto/TbUserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-618">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-915">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbRoleResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-837">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/pojo/entity/TbUserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/templates/controller.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="116" column="72" selection-start-line="116" selection-start-column="72" selection-end-line="116" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/templates/entity.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/ycy-intellij-plugin.jar!/images/4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/header.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/apidoc.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-generator/3.2.0/mybatis-plus-generator-3.2.0.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1359">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2589">
-          <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="78" column="30" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1038,7 +965,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.m2/repository/org/springframework/cloud/spring-cloud-starter-gateway/2.1.0.RELEASE/spring-cloud-starter-gateway-2.1.0.RELEASE.pom">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-gateway/2.1.0.RELEASE/spring-cloud-starter-gateway-2.1.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/java/com/white/gateway2server/Gateway2ServerApplication.java">
@@ -1073,14 +1000,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/easyexcel/2.0.0-beta3/easyexcel-2.0.0-beta3.jar!/com/alibaba/excel/write/builder/ExcelWriterBuilder.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.0.0-beta3/easyexcel-2.0.0-beta3.jar!/com/alibaba/excel/write/builder/ExcelWriterBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/easyexcel/2.0.0-beta3/easyexcel-2.0.0-beta3.jar!/com/alibaba/excel/EasyExcelFactory.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.0.0-beta3/easyexcel-2.0.0-beta3.jar!/com/alibaba/excel/EasyExcelFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
@@ -1112,12 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="docComment;class#ExportExcelController#0" />
-            <element signature="method#download#0;class#ExportExcelController#0" />
-            <element signature="method#upload#0;class#ExportExcelController#0" />
-            <element signature="method#data#0;class#ExportExcelController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1138,6 +1059,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/niushibang/report/pojo/dto/TbUserDTO.java" />
+    <entry file="file://$PROJECT_DIR$/user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/CommonException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Desc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/pojo/dto/TbUserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/util/mybatisplus/CodeGeneratorAllFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/controller/core/TbUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/service/TbUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/mapper/TbUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/ReportApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGeneratorAllFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5346">
+          <caret line="221" column="21" selection-start-line="221" selection-start-column="21" selection-end-line="221" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/service/impl/TbUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/pojo/entity/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/src/main/resources/mybatis/mapper/TbUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

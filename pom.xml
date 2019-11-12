@@ -24,13 +24,15 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>gateway-server</module>
+        <!--<module>gateway-server</module>-->
         <module>config-server</module>
         <module>admin-server</module>
-        <module>user-server</module>
+        <!--<module>user-server</module>-->
         <module>order-server</module>
         <module>resource-server</module>
         <module>gateway2-server</module>
+        <module>report</module>
+        <module>user</module>
     </modules>
 
     <build>

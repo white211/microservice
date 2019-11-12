@@ -9,11 +9,12 @@
         <module name="admin-server" />
         <module name="config-server" />
         <module name="eureka-server" />
-        <module name="gateway-server" />
         <module name="gateway2-server" />
         <module name="order-server" />
+        <module name="report" />
+        <module name="report (1)" />
         <module name="resource-server" />
-        <module name="user-server" />
+        <module name="user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,7 +26,10 @@
       <module name="microservice" target="1.8" />
       <module name="mocroservice" target="1.8" />
       <module name="order-server" target="1.8" />
+      <module name="report" target="1.8" />
+      <module name="report (1)" target="1.8" />
       <module name="resource-server" target="1.8" />
+      <module name="user" target="1.8" />
       <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
