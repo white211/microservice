@@ -1,8 +1,7 @@
 package com.white.orderserver.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.white.orderserver.pojo.entity.OrdOrderFlow;
-
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
@@ -10,7 +9,7 @@ import com.white.orderserver.pojo.entity.OrdOrderFlow;
  * </p>
  *
  * @author White
- * @since 2019-05-13
+ * @since 2019-11-12
  */
 public interface OrdOrderFlowMapper extends BaseMapper<OrdOrderFlow> {
 

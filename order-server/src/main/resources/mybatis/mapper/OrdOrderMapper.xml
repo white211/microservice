@@ -12,7 +12,7 @@
         <result column="discount_price" property="discountPrice" />
         <result column="pay_time" property="payTime" />
         <result column="deliver_time" property="deliverTime" />
-        <result column="receive" property="receive" />
+        <result column="receive_time" property="receiveTime" />
         <result column="refund_time" property="refundTime" />
         <result column="logistic_id" property="logisticId" />
         <result column="logistic_no" property="logisticNo" />
@@ -33,7 +33,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, order_no AS orderNo, product_amount AS productAmount, product_price AS productPrice, order_price AS orderPrice, discount_price AS discountPrice, pay_time AS payTime, deliver_time AS deliverTime, receive, refund_time AS refundTime, logistic_id AS logisticId, logistic_no AS logisticNo, pay_channel_type AS payChannelType, out_trade_no AS outTradeNo, sort, enable_flag AS enableFlag, enable_begin AS enableBegin, enable_end AS enableEnd, create_time AS createTime, create_by AS createBy, last_update_time AS lastUpdateTime, last_update_by AS lastUpdateBy, comments, version, status
+        id, order_no, product_amount, product_price, order_price, discount_price, pay_time, deliver_time, receive_time, refund_time, logistic_id, logistic_no, pay_channel_type, out_trade_no, sort, enable_flag, enable_begin, enable_end, create_time, create_by, last_update_time, last_update_by, comments, version, status
     </sql>
 
 </mapper>

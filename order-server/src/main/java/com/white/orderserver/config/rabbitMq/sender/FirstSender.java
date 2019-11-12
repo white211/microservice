@@ -1,7 +1,7 @@
 package com.white.orderserver.config.rabbitMq.sender;
 
 import com.white.orderserver.config.rabbitMq.MqConfig;
-import com.white.orderserver.pojo.dto.OrdOrderDto;
+//import com.white.orderserver.pojo.dto.OrdOrderDto;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

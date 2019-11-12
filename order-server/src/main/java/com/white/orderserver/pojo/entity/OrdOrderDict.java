@@ -10,28 +10,21 @@ import com.baomidou.mybatisplus.annotation.TableId;
  * @author: white @ current time
  */
 @Data
-public class OrdOrderFlow extends Model<OrdOrderFlow>{
+public class OrdOrderDict extends Model<OrdOrderDict>{
 
 
       // id
       @TableId(value = "id", type = IdType.AUTO)
        private Integer id;
 
-      // 订单编号id
-       private Integer orderId;
+      // 编码
+       private String code;
 
-      // 订单变化原因
-       private String changeReason;
+      // 值
+       private String value;
 
-      // 价格变化前
-
-      // 价格变化后
-
-      // 状态变化前
-       private Integer orderStatusBefore;
-
-      // 状态变化后
-       private Integer orderStatusAfter;
+      // 描述
+       private String description;
 
       // 排序
        private Integer sort;

@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author White
- * @since 2019-05-13
+ * @since 2019-11-12
  */
 public interface OrdOrderItemService extends IService<OrdOrderItem> {
 

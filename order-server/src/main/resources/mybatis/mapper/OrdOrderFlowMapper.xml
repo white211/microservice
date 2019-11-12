@@ -26,7 +26,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, order_id AS orderId, change_reason AS changeReason, order_price_before AS orderPriceBefore, order_price_after AS orderPriceAfter, order_status_before AS orderStatusBefore, order_status_after AS orderStatusAfter, sort, enable_flag AS enableFlag, enable_begin AS enableBegin, enable_end AS enableEnd, create_time AS createTime, create_by AS createBy, last_update_time AS lastUpdateTime, last_update_by AS lastUpdateBy, comments, version, status
+        id, order_id, change_reason, order_price_before, order_price_after, order_status_before, order_status_after, sort, enable_flag, enable_begin, enable_end, create_time, create_by, last_update_time, last_update_by, comments, version, status
     </sql>
 
 </mapper>

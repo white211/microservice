@@ -1,131 +1,75 @@
 package com.white.orderserver.pojo.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import java.math.BigDecimal;
-import java.util.Date;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
-import com.baomidou.mybatisplus.annotations.TableName;
 import lombok.Data;
-
-import java.io.Serializable;
-
+import java.util.Date;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
 /**
- * <p>
- * 订单详情表
- * </p>
- *
- * @author White
- * @since 2019-05-13
+ * Description: Create by mybatis-plus Generator
+ * @author: white @ current time
  */
-@TableName("ord_order_item")
 @Data
-public class OrdOrderItem extends Model<OrdOrderItem> {
+public class OrdOrderItem extends Model<OrdOrderItem>{
 
-    private static final long serialVersionUID = 1L;
 
-    /**
-     * id
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
-    /**
-     * 订单编号id
-     */
-    @TableField("order_id")
-    private Integer orderId;
-    /**
-     * 商品编号id
-     */
-    @TableField("product_id")
-    private Integer productId;
-    /**
-     * 购买数量
-     */
-    @TableField("buy_amount")
-    private Integer buyAmount;
-    /**
-     * 商品名称
-     */
-    @TableField("product_name")
-    private String productName;
-    /**
-     * 商品单价
-     */
-    @TableField("product_price")
-    private BigDecimal productPrice;
-    /**
-     * 优惠价格
-     */
-    @TableField("discount_price")
-    private BigDecimal discountPrice;
-    /**
-     * 实付价格
-     */
-    @TableField("item_price")
-    private BigDecimal itemPrice;
-    /**
-     * 打折类型
-     */
-    @TableField("discount_type")
-    private Integer discountType;
-    /**
-     * 排序
-     */
-    private Integer sort;
-    /**
-     * 可用状态
-     */
-    @TableField("enable_flag")
-    private Integer enableFlag;
-    /**
-     * 可用开始
-     */
-    @TableField("enable_begin")
-    private Date enableBegin;
-    /**
-     * 可用结束
-     */
-    @TableField("enable_end")
-    private Date enableEnd;
-    /**
-     * 创建时间
-     */
-    @TableField("create_time")
-    private Date createTime;
-    /**
-     * 创建人
-     */
-    @TableField("create_by")
-    private Integer createBy;
-    /**
-     * 最后更新时间
-     */
-    @TableField("last_update_time")
-    private Date lastUpdateTime;
-    /**
-     * 最后更新人
-     */
-    @TableField("last_update_by")
-    private Integer lastUpdateBy;
-    /**
-     * 备注
-     */
-    private String comments;
-    /**
-     * 版本号
-     */
-    private Integer version;
-    /**
-     * 状态
-     */
-    private Integer status;
+      // id
+      @TableId(value = "id", type = IdType.AUTO)
+       private Integer id;
 
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
-    }
+      // 订单编号id
+       private Integer orderId;
+
+      // 商品编号id
+       private Integer productId;
+
+      // 购买数量
+       private Integer buyAmount;
+
+      // 商品名称
+       private String productName;
+
+      // 商品单价
+
+      // 优惠价格
+
+      // 实付价格
+
+      // 打折类型
+       private Integer discountType;
+
+      // 排序
+       private Integer sort;
+
+      // 可用状态
+       private Integer enableFlag;
+
+      // 可用开始
+       private Date enableBegin;
+
+      // 可用结束
+       private Date enableEnd;
+
+      // 创建时间
+       private Date createTime;
+
+      // 创建人
+       private Integer createBy;
+
+      // 最后更新时间
+       private Date lastUpdateTime;
+
+      // 最后更新人
+       private Integer lastUpdateBy;
+
+      // 备注
+       private String comments;
+
+      // 版本号
+       private Integer version;
+
+      // 状态
+       private Integer status;
 
 
 }

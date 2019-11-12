@@ -300,3 +300,53 @@
 [cms] 17:20:09.931 [Thread-14] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
 [cms] 17:20:09.968 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[888] - Shutting down DiscoveryClient ...
 [cms] 17:20:09.971 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient[911] - Completed shut down of DiscoveryClient
+[cms] 17:51:46.377 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$771cec96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 17:51:49.358 [main] INFO  com.white.eurekaserver.EurekaServerApplication[679] - The following profiles are active: dev
+[cms] 17:51:54.487 [main] INFO  org.springframework.cloud.context.scope.GenericScope[294] - BeanFactory id=8f74c3b2-6ec2-3fa6-9522-e7d289815d83
+[cms] 17:51:54.870 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$771cec96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cms] 17:51:58.384 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[90] - Tomcat initialized with port(s): 8081 (http)
+[cms] 17:51:58.467 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+[cms] 17:51:58.472 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.17]
+[cms] 17:51:58.825 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+[cms] 17:51:58.834 [main] INFO  org.springframework.web.context.ContextLoader[296] - Root WebApplicationContext: initialization completed in 9423 ms
+[cms] 17:51:59.291 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 17:51:59.347 [main] INFO  com.netflix.config.DynamicPropertyFactory[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@260b90a1
+[cms] 17:52:04.847 [main] INFO  com.sun.jersey.server.impl.application.WebApplicationImpl[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[cms] 17:52:05.120 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 17:52:05.126 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 17:52:05.815 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 17:52:05.875 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 17:52:10.214 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[cms] 17:52:11.818 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[cms] 17:52:19.815 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory[71] - Setting initial instance status as: STARTING
+[cms] 17:52:20.104 [main] INFO  com.netflix.discovery.DiscoveryClient[349] - Initializing Eureka in region us-east-1
+[cms] 17:52:20.304 [main] INFO  com.netflix.discovery.DiscoveryClient[352] - Client configured to neither register nor query for data.
+[cms] 17:52:20.417 [main] INFO  com.netflix.discovery.DiscoveryClient[365] - Discovery Client initialized at timestamp 1573552340405 with initial instances count: 0
+[cms] 17:52:20.584 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[63] - Initializing ...
+[cms] 17:52:20.596 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[188] - Adding new peer nodes [http://127.0.0.1:8081/eureka/]
+[cms] 17:52:23.578 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[70] - Using JSON encoding codec LegacyJacksonJson
+[cms] 17:52:23.598 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[71] - Using JSON decoding codec LegacyJacksonJson
+[cms] 17:52:23.602 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[80] - Using XML encoding codec XStreamXml
+[cms] 17:52:23.623 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider[81] - Using XML decoding codec XStreamXml
+[cms] 17:52:24.804 [main] INFO  com.netflix.eureka.cluster.PeerEurekaNodes[110] - Replica node URL:  http://127.0.0.1:8081/eureka/
+[cms] 17:52:24.897 [main] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[151] - Finished initializing remote region registries. All known remote regions: []
+[cms] 17:52:24.949 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext[70] - Initialized
+[cms] 17:52:25.194 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[cms] 17:52:26.616 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[42] - Registering application EUREKA-SERVER with eureka with status UP
+[cms] 17:52:26.644 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[109] - Setting the eureka configuration..
+[cms] 17:52:26.663 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[cms] 17:52:26.667 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[128] - Eureka environment value eureka.environment is not set, defaulting to test
+[cms] 17:52:26.907 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[184] - isAws returned false
+[cms] 17:52:26.919 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap[152] - Initialized server context
+[cms] 17:52:26.928 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[241] - Got 1 instances from neighboring DS node
+[cms] 17:52:26.932 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[242] - Renew threshold is: 1
+[cms] 17:52:26.938 [Thread-12] INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl[253] - Changing status to UP
+[cms] 17:52:26.968 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration[72] - Started Eureka Server
+[cms] 17:52:27.122 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer[204] - Tomcat started on port(s): 8081 (http) with context path ''
+[cms] 17:52:27.128 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[141] - Updating port to 8081
+[cms] 17:52:27.137 [main] INFO  com.white.eurekaserver.EurekaServerApplication[59] - Started EurekaServerApplication in 48.365 seconds (JVM running for 97.651)
+[cms] 17:52:28.852 [http-nio-8081-exec-10] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[cms] 17:52:28.854 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[524] - Initializing Servlet 'dispatcherServlet'
+[cms] 17:52:28.877 [http-nio-8081-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet[546] - Completed initialization in 21 ms
+[cms] 17:52:41.864 [http-nio-8081-exec-9] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=false)
+[cms] 17:52:42.653 [http-nio-8081-exec-8] INFO  com.netflix.eureka.registry.AbstractInstanceRegistry[266] - Registered instance CONFIG-SERVER/DESKTOP-DIC4SEB:config-server:8082 with status UP (replication=true)
