@@ -13,4 +13,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface TbUserService extends IService<TbUser> {
 
+    int newUser(TbUser model);
+
 }

@@ -16,3 +16,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8081/eureka/
+
+redission:
+  prop:
+    timeout: 3000
+    address: redis://127.0.0.1:6379
+    password:
+    connectionPoolSize: 64
+    connectionMinimumIdleSize: 10
+    slaveConnectionPoolSize: 250
+    masterConnectionPoolSize: 250
+    masterName:

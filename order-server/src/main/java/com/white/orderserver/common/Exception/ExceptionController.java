@@ -6,6 +6,7 @@ import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -103,6 +104,11 @@ public class ExceptionController {
     @ExceptionHandler(UnauthenticatedException.class)
     public Result unauthenticatedException(){
         return Result.requestByError(ResultCode.ERROR.getCode(),"you have not permission");
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public Result httpMessageNotReadableException(){
+        return Result.requestByError(ResultCode.ERROR.getCode(),"request json data is error");
     }
 
 

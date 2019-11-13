@@ -13,31 +13,12 @@ import org.springframework.context.annotation.Configuration;
  * @DateTime: 2019-04-28 11:03:02
  **/
 @Configuration
-@MapperScan("com.white.userserver.mapper.*")
+@MapperScan("com.white.resourceserver.mapper.*")
 public class MybatisPlusConfig {
-
-    @Bean
-    public PerformanceInterceptor performanceInterceptor() {
-        PerformanceInterceptor performanceInterceptor = new PerformanceInterceptor();
-        performanceInterceptor.setMaxTime(1000);
-        performanceInterceptor.setFormat(true);
-        return performanceInterceptor;
-    }
-
 
     @Bean
     public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
     }
-
-
-//    @Bean
-//    @ConfigurationProperties("spring.datasource.type." )
-//    public DataSource dataSource() {
-//        return DruidDataSourceBuilder
-//                .create()
-//                .build();
-//    }
-
 
 }

@@ -24,14 +24,14 @@ import java.util.*;
  * @DateTime: 2019-04-28 11:08:29
  **/
 
-public class CodeGenerator {
+public class CodeGeneratorAllFile {
 
-    private static String packageName="order";    //文件路径
+    private static String packageName="resourceserver";    //文件路径
     private static String authorName="White";     //作者
-    private static String table="tb_user";                  //table名字
+//    private static String table="tb_user";                  //table名字
     //    private static String prefix="sc_";                     //table前缀
     private static File file = new File("");
-    private static String path = file.getAbsolutePath()+"/order";
+    private static String path = file.getAbsolutePath()+"/resource-server";
 
     /**
      * <p>
@@ -77,41 +77,41 @@ public class CodeGenerator {
 
         List<FileOutConfig> fileOutConfigs = new ArrayList<>();
 
-//        FileOutConfig fileOutConfig = new FileOutConfig("/templates/mapper.xml.ftl") {
-//            // 自定义输出文件目录
-//            @Override
-//            public String outputFile(TableInfo tableInfo) {
-//                return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
-//            }
-//        };
+        FileOutConfig fileOutConfig = new FileOutConfig("/templates/mapper.xml.ftl") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/resources/mybatis/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
+            }
+        };
 
         FileOutConfig fileOutConfig111 = new FileOutConfig("/templates/controller.java.ftl") {
             // 自定义输出文件目录
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return path+"/src/main/java/com/white/order/controller/core/" + tableInfo.getEntityName() + "Controller.java";
+                return path+"/src/main/java/com/white/resourceserver/controller/core/" + tableInfo.getEntityName() + "Controller.java";
             }
         };
 
-//        FileOutConfig fileOutConfig222 = new FileOutConfig("/templates/dto.java.ftl") {
-//            // 自定义输出文件目录
-//            @Override
-//            public String outputFile(TableInfo tableInfo) {
-//                return path+"/src/main/java/com/white/order/pojo/dto/" + tableInfo.getEntityName() + "DTO.java";
-//            }
-//        };
+        FileOutConfig fileOutConfig222 = new FileOutConfig("/templates/dto.java.ftl") {
+            // 自定义输出文件目录
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                return path+"/src/main/java/com/white/resourceserver/pojo/dto/" + tableInfo.getEntityName() + "DTO.java";
+            }
+        };
 
         FileOutConfig fileOutConfig333 = new FileOutConfig("/templates/entity.java.ftl") {
             // 自定义输出文件目录
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return path+"/src/main/java/com/white/order/pojo/entity/" + tableInfo.getEntityName() + ".java";
+                return path+"/src/main/java/com/white/resourceserver/pojo/entity/" + tableInfo.getEntityName() + ".java";
             }
         };
 
-//        fileOutConfigs.add(fileOutConfig);
+        fileOutConfigs.add(fileOutConfig);
         fileOutConfigs.add(fileOutConfig111);
-//        fileOutConfigs.add(fileOutConfig222);
+        fileOutConfigs.add(fileOutConfig222);
         fileOutConfigs.add(fileOutConfig333);
 
         // 自定义需要填充的字段
@@ -247,10 +247,10 @@ public class CodeGenerator {
                 // 至您项目 src/main/resources/template 目录下，模板名称也可自定义如下配置：
                  .setController(null)
                  .setEntity(null)
-                 .setMapper(null)
-                 .setXml(null)
-                 .setService(null)
-                 .setServiceImpl(null)
+                // .setMapper("...");
+                // .setXml("...");
+                // .setService("...");
+                // .setServiceImpl("...");
         );
 
         //设置引擎模板

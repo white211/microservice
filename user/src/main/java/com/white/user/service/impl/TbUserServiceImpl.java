@@ -17,4 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser> implements TbUserService {
 
+    @Override
+    public int newUser(TbUser model) {
+        return this.baseMapper.insert(model);
+    }
 }

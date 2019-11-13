@@ -1,228 +1,60 @@
 package com.white.resourceserver.pojo.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
+import lombok.Data;
 import java.util.Date;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.activerecord.Model;
-import com.baomidou.mybatisplus.annotations.TableName;
-import java.io.Serializable;
-
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
 /**
- * <p>
- * 商品分类表
- * </p>
- *
- * @author White
- * @since 2019-05-13
+ * Description: Create by mybatis-plus Generator
+ * @author: white @ current time
  */
-@TableName("res_product_cate")
-public class ResProductCate extends Model<ResProductCate> {
-
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * id
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
-    /**
-     * 分类名称
-     */
-    @TableField("cate_name")
-    private String cateName;
-    /**
-     * 分类描述
-     */
-    @TableField("cate_description")
-    private String cateDescription;
-    /**
-     * 排序
-     */
-    private Integer sort;
-    /**
-     * 可用状态
-     */
-    @TableField("enable_flag")
-    private Integer enableFlag;
-    /**
-     * 可用开始
-     */
-    @TableField("enable_begin")
-    private Date enableBegin;
-    /**
-     * 可用结束
-     */
-    @TableField("enable_end")
-    private Date enableEnd;
-    /**
-     * 创建时间
-     */
-    @TableField("create_time")
-    private Date createTime;
-    /**
-     * 创建人
-     */
-    @TableField("create_by")
-    private Integer createBy;
-    /**
-     * 最后更新时间
-     */
-    @TableField("last_update_time")
-    private Date lastUpdateTime;
-    /**
-     * 最后更新人
-     */
-    @TableField("last_update_by")
-    private Integer lastUpdateBy;
-    /**
-     * 备注
-     */
-    private String comments;
-    /**
-     * 版本号
-     */
-    private Integer version;
-    /**
-     * 状态
-     */
-    private Integer status;
+@Data
+public class ResProductCate extends Model<ResProductCate>{
 
 
-    public Integer getId() {
-        return id;
-    }
+      // id
+      @TableId(value = "id", type = IdType.AUTO)
+       private Integer id;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+      // 分类名称
+       private String cateName;
 
-    public String getCateName() {
-        return cateName;
-    }
+      // 分类描述
+       private String cateDescription;
 
-    public void setCateName(String cateName) {
-        this.cateName = cateName;
-    }
+      // 排序
+       private Integer sort;
 
-    public String getCateDescription() {
-        return cateDescription;
-    }
+      // 可用状态
+       private Integer enableFlag;
 
-    public void setCateDescription(String cateDescription) {
-        this.cateDescription = cateDescription;
-    }
+      // 可用开始
+       private Date enableBegin;
 
-    public Integer getSort() {
-        return sort;
-    }
+      // 可用结束
+       private Date enableEnd;
 
-    public void setSort(Integer sort) {
-        this.sort = sort;
-    }
+      // 创建时间
+       private Date createTime;
 
-    public Integer getEnableFlag() {
-        return enableFlag;
-    }
+      // 创建人
+       private Integer createBy;
 
-    public void setEnableFlag(Integer enableFlag) {
-        this.enableFlag = enableFlag;
-    }
+      // 最后更新时间
+       private Date lastUpdateTime;
 
-    public Date getEnableBegin() {
-        return enableBegin;
-    }
+      // 最后更新人
+       private Integer lastUpdateBy;
 
-    public void setEnableBegin(Date enableBegin) {
-        this.enableBegin = enableBegin;
-    }
+      // 备注
+       private String comments;
 
-    public Date getEnableEnd() {
-        return enableEnd;
-    }
+      // 版本号
+       private Integer version;
 
-    public void setEnableEnd(Date enableEnd) {
-        this.enableEnd = enableEnd;
-    }
+      // 状态
+       private Integer status;
 
-    public Date getCreateTime() {
-        return createTime;
-    }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Integer getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(Integer createBy) {
-        this.createBy = createBy;
-    }
-
-    public Date getLastUpdateTime() {
-        return lastUpdateTime;
-    }
-
-    public void setLastUpdateTime(Date lastUpdateTime) {
-        this.lastUpdateTime = lastUpdateTime;
-    }
-
-    public Integer getLastUpdateBy() {
-        return lastUpdateBy;
-    }
-
-    public void setLastUpdateBy(Integer lastUpdateBy) {
-        this.lastUpdateBy = lastUpdateBy;
-    }
-
-    public String getComments() {
-        return comments;
-    }
-
-    public void setComments(String comments) {
-        this.comments = comments;
-    }
-
-    public Integer getVersion() {
-        return version;
-    }
-
-    public void setVersion(Integer version) {
-        this.version = version;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
-    }
-
-    @Override
-    public String toString() {
-        return "ResProductCate{" +
-        ", id=" + id +
-        ", cateName=" + cateName +
-        ", cateDescription=" + cateDescription +
-        ", sort=" + sort +
-        ", enableFlag=" + enableFlag +
-        ", enableBegin=" + enableBegin +
-        ", enableEnd=" + enableEnd +
-        ", createTime=" + createTime +
-        ", createBy=" + createBy +
-        ", lastUpdateTime=" + lastUpdateTime +
-        ", lastUpdateBy=" + lastUpdateBy +
-        ", comments=" + comments +
-        ", version=" + version +
-        ", status=" + status +
-        "}";
-    }
 }

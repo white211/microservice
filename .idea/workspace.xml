@@ -2,39 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a06b216-6569-4323-acbb-3de8aafe48e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGeneratorAllFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/templates/controller.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/templates/dto.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/resources/templates/entity.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatisplus_spring_boot_starter_3_1_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/ILocker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/Impl/RedissonLocker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/util/RedissonLockUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/Routes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGeneratorAllFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/controller.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/dto.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/entity.java.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/Routes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatisplus_spring_boot_starter_1_3_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/warn.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/warn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderFlowController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderItemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/Routes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderFlowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderItemMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/dto/OrdOrderDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrderFlow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/OrdOrderFlowService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/OrdOrderItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/OrdOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/impl/OrdOrderFlowServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/impl/OrdOrderItemServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/impl/OrdOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/resources/mybatis/mapper/OrdOrderFlowMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/resources/mybatis/mapper/OrdOrderItemMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/resources/mybatis/mapper/OrdOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResLogisticController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResProductCateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/Routes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResLogisticMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductCateMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResLogistic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResProductCate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResLogisticService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResProductCateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResLogisticServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductCateServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResLogisticMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResProductCateMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/gateway-server/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,7 +96,7 @@
     <session id="36087574">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="131" />
+          <entry key="project.closed" value="134" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -79,7 +104,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.20" value="4" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="3" />
@@ -89,7 +114,7 @@
           <entry key="project.open.time.26" value="11" />
           <entry key="project.open.time.27" value="13" />
           <entry key="project.open.time.28" value="5" />
-          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.29" value="4" />
           <entry key="project.open.time.3" value="6" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="4" />
@@ -102,48 +127,48 @@
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.5" value="12" />
+          <entry key="project.open.time.5" value="13" />
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="134" />
+          <entry key="project.opened" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MD" value="3" />
-          <entry key="class" value="76" />
-          <entry key="ftl" value="51" />
+          <entry key="class" value="81" />
+          <entry key="ftl" value="52" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="801" />
+          <entry key="java" value="846" />
           <entry key="jpg" value="5" />
           <entry key="json" value="2" />
           <entry key="kt" value="1" />
           <entry key="log" value="2" />
           <entry key="md" value="7" />
           <entry key="pom" value="3" />
-          <entry key="properties" value="32" />
-          <entry key="txt" value="12" />
+          <entry key="properties" value="35" />
+          <entry key="txt" value="14" />
           <entry key="vm" value="2" />
-          <entry key="xml" value="127" />
-          <entry key="yml" value="87" />
+          <entry key="xml" value="137" />
+          <entry key="yml" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="76" />
-          <entry key="FTL" value="51" />
+          <entry key="CLASS" value="81" />
+          <entry key="FTL" value="52" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="801" />
+          <entry key="JAVA" value="846" />
           <entry key="JSON" value="2" />
           <entry key="Kotlin" value="1" />
           <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Properties" value="32" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Properties" value="35" />
           <entry key="VTL" value="2" />
-          <entry key="XML" value="130" />
-          <entry key="YAML" value="87" />
+          <entry key="XML" value="140" />
+          <entry key="YAML" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -151,32 +176,32 @@
           <entry key="MD" value="315" />
           <entry key="dummy" value="14" />
           <entry key="ftl" value="1112" />
-          <entry key="java" value="13061" />
+          <entry key="java" value="14251" />
           <entry key="md" value="22" />
-          <entry key="xml" value="595" />
-          <entry key="yml" value="184" />
+          <entry key="xml" value="606" />
+          <entry key="yml" value="255" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="FTL" value="1112" />
-          <entry key="JAVA" value="13061" />
+          <entry key="JAVA" value="14251" />
           <entry key="Markdown" value="337" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SQL" value="8" />
-          <entry key="XML" value="587" />
-          <entry key="YAML" value="184" />
+          <entry key="XML" value="598" />
+          <entry key="YAML" value="255" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGeneratorAllFile.java">
+        <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            <state relative-caret-position="370">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -189,6 +214,7 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -204,6 +230,7 @@
       <find>user</find>
       <find>report</find>
       <find>order</find>
+      <find>orderserver</find>
     </findStrings>
     <replaceStrings>
       <replace>JedisHepler</replace>
@@ -213,6 +240,7 @@
       <replace>white</replace>
       <replace>order</replace>
       <replace>orderserver</replace>
+      <replace>resourceserver</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\microservice\user\src\main\java\com\white\user-server</dir>
@@ -225,21 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductMapper.java" />
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResLogisticServiceImpl.java" />
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductCateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/mapper/TbUserMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/config/SystemUrlConfig.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/service/impl/TbUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/resource-server/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/util/mp/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/gateway-server/src/main/java/com/white/gatewayserver/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/util/mp/AutoGenerator.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbRoleController.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/resources/templates/dto.java.ftl" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbUserController.java" />
@@ -274,8 +287,23 @@
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/rabbitMq/sender/FirstSender.java" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/order-server/pom.xml" />
         <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGeneratorAllFile.java" />
+        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGeneratorAllFile.java" />
+        <option value="$PROJECT_DIR$/resource-server/pom.xml" />
+        <option value="$PROJECT_DIR$/order-server/pom.xml" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/Impl/RedissonLocker.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/util/RedissonLockUtil.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonProperties.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/Routes.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/Routes.java" />
+        <option value="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/OrderController.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java" />
       </list>
     </option>
   </component>
@@ -329,10 +357,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/microservice/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/microservice/user/src/main/java/com/white/user/controller/custom/UserController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573554130313" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573637067266" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/com/white/user" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,12 +370,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\microservice\order-server\src\main\resources\templates" />
-      <recent name="C:\microservice\order-server\src\main\java\com\white\orderserver\util\mp" />
-      <recent name="C:\microservice\user\src\main\resources" />
-      <recent name="C:\microservice\report\src\main\resources" />
-      <recent name="C:\microservice" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\microservice\user\src\main\java\com" />
+      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver\util\excel" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.white.gatewayserver.config" />
@@ -356,9 +381,12 @@
       <recent name="com.white.gatewayserver.util.mp" />
       <recent name="com.white.resourceserver.util.mp" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\microservice\user\src\main\java\com" />
-      <recent name="C:\microservice\user-server\src\main\java\com\white\userserver\util\excel" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\microservice\order-server\src\main\java\com\white\orderserver\config" />
+      <recent name="C:\microservice\resource-server\src\main\resources\templates" />
+      <recent name="C:\microservice\resource-server\src\main\java\com\white\resourceserver\util\mp" />
+      <recent name="C:\microservice\order-server\src\main\resources\templates" />
+      <recent name="C:\microservice\order-server\src\main\java\com\white\orderserver\util\mp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -373,20 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CodeGeneratorAllFile (3)">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.white.userserver.util.mp.CodeGenerator" />
-      <module name="user-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.white.userserver.util.mp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.CodeGeneratorAllFile (4)">
     <configuration name="CodeGeneratorAllFile (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.white.user.util.mybatisplus.CodeGeneratorAllFile" />
       <module name="user" />
@@ -419,6 +434,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.white.orderserver.util.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGeneratorAllFile (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.white.resourceserver.util.mp.CodeGeneratorAllFile" />
+      <module name="resource-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.white.resourceserver.util.mp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -528,19 +556,19 @@
       <item itemvalue="Spring Boot.Gateway2ServerApplication" />
       <item itemvalue="Spring Boot.ReportApplication" />
       <item itemvalue="Spring Boot.ReportApplication (1)" />
-      <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Application.CodeGeneratorAllFile" />
       <item itemvalue="Application.CodeGeneratorAllFile (1)" />
       <item itemvalue="Application.CodeGeneratorAllFile (2)" />
       <item itemvalue="Application.CodeGeneratorAllFile (3)" />
+      <item itemvalue="Application.CodeGeneratorAllFile (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGeneratorAllFile (4)" />
         <item itemvalue="Application.CodeGeneratorAllFile (3)" />
         <item itemvalue="Application.CodeGeneratorAllFile (2)" />
         <item itemvalue="Application.CodeGeneratorAllFile (1)" />
         <item itemvalue="Application.CodeGeneratorAllFile" />
-        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -687,12 +715,15 @@
       <workItem from="1568090001342" duration="1250000" />
       <workItem from="1568508288298" duration="1977000" />
       <workItem from="1573550445676" duration="302000" />
-      <workItem from="1573552204495" duration="1741000" />
+      <workItem from="1573552204495" duration="5180000" />
+      <workItem from="1573562059435" duration="3454000" />
+      <workItem from="1573633770208" duration="3255000" />
+      <workItem from="1573637217494" duration="564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324085000" />
+    <option name="totallyTimeSpent" value="334797000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,21 +745,21 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.1709531" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49848714" weight="0.38255033" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.12254161" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49848714" weight="0.8322148" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32550335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45967743" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.8003356" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50226927" side_tool="true" weight="0.8909396" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32718122" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.8322148" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" weight="0.90436244" />
-      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.49924356" weight="0.9328859" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.49924356" weight="0.82550335" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4977307" weight="0.9597315" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -811,243 +842,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/HELP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/niushibang/report/pojo/dto/TbUserDTO.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/CommonException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Exception/ExceptionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Desc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/common/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/pojo/dto/TbUserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/util/mybatisplus/CodeGeneratorAllFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/controller/core/TbUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/service/TbUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/mapper/TbUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/ReportApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/util/mybatisplus/CodeGeneratorAllFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5346">
-          <caret line="221" column="21" selection-start-line="221" selection-start-column="21" selection-end-line="221" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/service/impl/TbUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/pojo/entity/TbUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/java/com/white/report/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/src/main/resources/mybatis/mapper/TbUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/impl/OrdOrderFlowServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrderFlow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderFlowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderFlowController.java" />
     <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1059,13 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1087,9 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,9 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,9 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,17 +909,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGeneratorAllFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/templates/controller.java.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResProductCateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResLogisticMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGeneratorAllFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway2-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/ILocker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/Impl/RedissonLocker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/util/RedissonLockUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#1#247#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/OrdOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.1/mybatis-plus-extension-3.1.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.2.0/mybatis-plus-extension-3.2.0.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/resources/mybatis/mapper/OrdOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/mapper/OrdOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/service/impl/OrdOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="110" column="94" selection-start-line="110" selection-start-column="94" selection-end-line="110" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/core/TbUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="78" column="8" lean-forward="true" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/CommonException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.1/mybatis-plus-core-3.1.1.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/pojo/entity/OrdOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/pojo/entity/TbUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.2.0/mybatis-plus-extension-3.2.0.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
