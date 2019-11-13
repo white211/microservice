@@ -1,6 +1,9 @@
 package com.white.orderserver.pojo.entity;
 
 import lombok.Data;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -24,11 +27,13 @@ public class OrdOrder extends Model<OrdOrder>{
        private Integer productAmount;
 
       // 商品价格
+      private BigDecimal productPrice;
 
       // 订单实收价格
+     private BigDecimal orderPrice;
 
       // 订单优惠价格
-
+     private BigDecimal discountPrice;
       // 付款时间
        private Date payTime;
 

@@ -2,7 +2,6 @@ package com.white.orderserver.controller.custom;
 
 import com.white.orderserver.common.Result;
 import com.white.orderserver.config.redission.util.RedissonLockUtil;
-import com.white.orderserver.pojo.dto.OrdOrderDTO;
 import com.white.orderserver.pojo.entity.OrdOrder;
 import com.white.orderserver.service.OrdOrderService;
 
@@ -41,12 +40,8 @@ public class OrderController implements Routes {
             RedissonLockUtil.lock(key);
             logger.info(">>>>>>>>>>>>>开始加锁<<<<<<<<<<<<<<");
             model.setId(null);
-//            model.setCreateTime(new Date());
-//            model.setCreateBy(-1);
-//            model.setLastUpdateBy(-1);
-//            model.setLastUpdateTime(new Date());
-            int id = ordOrderService.getBaseMapper().insert(model);
-            model.setId(id);
+            boolean flag = ordOrderService.save(model);
+            result.setMsg(String.valueOf(flag));
             result.setData(model);
         }catch (Exception e){
             e.printStackTrace();
