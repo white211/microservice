@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a06b216-6569-4323-acbb-3de8aafe48e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/ILocker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/Impl/RedissonLocker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/config/RedissonProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/config/redission/util/RedissonLockUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/custom/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGeneratorAllFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/controller.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/dto.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/resources/templates/entity.java.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatisplus_spring_boot_starter_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2-server/logs/warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/common/Exception/ExceptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResLogisticController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResProductCateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/ResProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/controller/Routes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResLogisticMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductCateMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/mapper/ResProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResLogistic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/pojo/entity/ResProductCate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResLogisticService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResProductCateService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/ResProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResLogisticServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductCateServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/service/impl/ResProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/src/main/java/com/white/resourceserver/util/mp/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResLogisticMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResProductCateMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-server/src/main/resources/mybatis/mapper/ResProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/user/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/gateway-server/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -140,7 +85,7 @@
           <entry key="MD" value="3" />
           <entry key="class" value="81" />
           <entry key="ftl" value="52" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="4" />
           <entry key="java" value="846" />
           <entry key="jpg" value="5" />
           <entry key="json" value="2" />
@@ -164,7 +109,7 @@
           <entry key="JSON" value="2" />
           <entry key="Kotlin" value="1" />
           <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="PLAIN_TEXT" value="20" />
           <entry key="Properties" value="35" />
           <entry key="VTL" value="2" />
           <entry key="XML" value="140" />
@@ -176,6 +121,7 @@
           <entry key="MD" value="315" />
           <entry key="dummy" value="14" />
           <entry key="ftl" value="1112" />
+          <entry key="gitignore" value="17" />
           <entry key="java" value="14251" />
           <entry key="md" value="22" />
           <entry key="xml" value="606" />
@@ -187,7 +133,7 @@
           <entry key="FTL" value="1112" />
           <entry key="JAVA" value="14251" />
           <entry key="Markdown" value="337" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="SQL" value="8" />
           <entry key="XML" value="598" />
           <entry key="YAML" value="255" />
@@ -198,10 +144,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="243">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-server/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -253,8 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbRoleController.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/templates/dto.java.ftl" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/TbUserController.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/white/userserver/controller/core/TbRoleController.java" />
         <option value="$PROJECT_DIR$/user-server/pom.xml" />
@@ -304,6 +257,8 @@
         <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/service/TbUserService.java" />
         <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/service/impl/TbUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java" />
+        <option value="$PROJECT_DIR$/user-server/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -718,12 +673,12 @@
       <workItem from="1573552204495" duration="5180000" />
       <workItem from="1573562059435" duration="3454000" />
       <workItem from="1573633770208" duration="3255000" />
-      <workItem from="1573637217494" duration="564000" />
+      <workItem from="1573637217494" duration="893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334797000" />
+    <option name="totallyTimeSpent" value="335126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,7 +700,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.12254161" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.17397882" />
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49848714" weight="0.8322148" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32550335" />
@@ -842,14 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/controller/OrdOrderFlowController.java" />
-    <entry file="file://$PROJECT_DIR$/order-server/src/main/java/com/white/orderserver/util/mp/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/config/MybatisPlusConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -1156,8 +1103,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/src/main/java/com/white/user/controller/custom/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="219">
           <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
