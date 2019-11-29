@@ -1,5 +1,8 @@
 package com.white.orderserver.config.rabbitMq.receiver;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +14,13 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class FirstConsumer {
+
+    private static final Logger logger = LoggerFactory.getLogger(FirstConsumer.class);
+
     @RabbitListener(queues = {"order-queue"}, containerFactory = "rabbitListenerContainerFactory")
     public void handleMessage(String message) throws Exception {
         // 处理消息
-        System.out.println("FirstConsumer {} handleMessage :"+message);
+        logger.info(">>>>>>>>>消费者<<<<<<<<<<  FirstConsumer {} handleMessage :",message);
     }
 
 }

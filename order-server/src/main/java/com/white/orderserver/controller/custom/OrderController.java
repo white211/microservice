@@ -1,6 +1,7 @@
 package com.white.orderserver.controller.custom;
 
 import com.white.orderserver.common.Result;
+import com.white.orderserver.config.rabbitMq.sender.FirstSender;
 import com.white.orderserver.config.redission.util.RedissonLockUtil;
 import com.white.orderserver.pojo.entity.OrdOrder;
 import com.white.orderserver.service.OrdOrderService;
@@ -30,17 +31,20 @@ public class OrderController implements Routes {
     @Autowired
     private OrdOrderService ordOrderService;
 
+    @Autowired
+    private FirstSender firstSender;
+
     @PostMapping(ORDER_NEW)
     @Transactional(rollbackFor = Exception.class)
     public Result newOrder(@RequestBody OrdOrder model){
         Result result = new Result();
-        // TODO: 2019/11/12  新建订单
         String key = "key";
         try{
             RedissonLockUtil.lock(key);
             logger.info(">>>>>>>>>>>>>开始加锁<<<<<<<<<<<<<<");
             model.setId(null);
             boolean flag = ordOrderService.save(model);
+            firstSender.send(model.toString());
             result.setMsg(String.valueOf(flag));
             result.setData(model);
         }catch (Exception e){
